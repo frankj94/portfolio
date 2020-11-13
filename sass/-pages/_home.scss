@@ -1,0 +1,150 @@
+// Heading START
+.main {
+  position: absolute;
+  top: 32%;
+  left: 2%;
+  height: 50vh;
+  width: 40vw;
+  z-index: 15;
+  //   border: solid;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  //   background-color: #118a8400;
+
+  h2 {
+    text-align: center;
+
+    padding-bottom: 1rem;
+    font-size: 1.9rem;
+    font-weight: 500;
+  }
+  p {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.103);
+    transition: 1s ease;
+  }
+}
+// Heading END
+
+// Social Media START
+.socials {
+  position: absolute;
+  z-index: 15;
+  left: 2%;
+  top: 83%;
+  color: rgba(128, 128, 128, 0.911);
+  font-size: 3.5rem;
+  width: 40vw;
+  height: 10vh;
+  margin-top: 1%;
+  border-radius: 15px;
+
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.103);
+    transition: 1s ease;
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+}
+.la-facebook:hover {
+  color: #4064ac;
+}
+.la-flickr:hover {
+  color: #f70080;
+}
+.la-github:hover {
+  color: #24292e;
+}
+.la-instagram:hover {
+  animation: 2s ease instagram infinite;
+}
+.la-linkedin:hover {
+  color: #0e72a3;
+}
+.la-twitter:hover {
+  color: #1c9cea;
+}
+.la-whatsapp:hover {
+  color: #24cc63;
+}
+// Social Media END
+
+// Frosh Tech Blog START
+
+.frosh {
+  position: absolute;
+  right: 8%;
+  top: 47%;
+  width: 27rem;
+  height: 30rem;
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    padding-bottom: 1rem;
+
+    &:hover {
+      background-color: rgba(128, 128, 128, 0.103);
+      transition: 1s ease;
+    }
+  }
+}
+
+// Frosh Logo and link to website START
+.frosh-link {
+  width: 40%;
+  display: flex;
+  align-self: center;
+}
+.frosh-logo__container {
+  margin: 2% 2% 1% 2%;
+}
+.frosh-logo__img {
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+}
+// Frosh Logo and link to website END
+
+// Frosh Feed START
+.frosh-blog__container {
+  padding-left: 1rem;
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    p {
+      font-style: italic;
+    }
+  }
+}
+
+.post-container {
+  border-radius: 15px;
+  background-color: #b29e9727;
+  margin: 1%;
+  padding: 2%;
+  padding-left: 3%;
+  margin-right: 4%;
+
+  &:hover {
+    background-color: #a8d4d2;
+    transition: 1s ease;
+  }
+}
+// Frosh Feed END
+
+// Frosh Tech Blog END

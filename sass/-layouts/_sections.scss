@@ -1,0 +1,11 @@
+html {
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  margin-bottom: 1em;
+}

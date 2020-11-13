@@ -1,0 +1,45 @@
+.global-header {
+  background-color: $primary-color;
+  height: 15vh;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  position: absolute;
+}
+//Header Navigation
+.header-navigation {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  // padding-left: 1rem;
+  padding-right: 1rem;
+  // Home Logo
+  .home-logo__img {
+    height: 4rem;
+    width: auto;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+
+    // &:hover {
+    // }
+  }
+  // Header Nav List
+  #container {
+    margin: 0;
+    padding: 0;
+    perspective: 15px;
+  }
+}
+// .header-wrapper__end {
+//   width: 100vw;
+//   height: 100vh;
+// }
+#main-background {
+  fill: $primary-color;
+  width: 100%;
+  height: 56vh;
+  margin: -0%;
+  z-index: 20;
+}

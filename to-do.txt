@@ -1,0 +1,40 @@
+1) homepage logo snap to the corner and transform to the favicon
+when you scroll down
+
+2) RSS feed or preview tool for frosh tech
+
+
+
+
+// Create New Element
+let python = document.createElement('p');
+python.className = 'python-skills';
+python.id = 'python-skills';
+python.setAttribute('title', 'Python Proficiency');
+python.appendChild(document.createTextNode(''));
+python.style.setProperty('font-size', '16px')
+document.getElementById('pythonJS').appendChild(python)
+
+
+// Grab Old Element
+const oldPython = document.getElementById('python');
+
+
+// On Click function to add element
+oldPython.addEventListener('click', pythonClick);
+function pythonClick(e) {
+if (python.innerHTML === '') {
+  python.innerHTML = '60%'
+  } else {
+  python.innerHTML = ''
+  }
+}
+
+
+// On click function to remove element By Element
+const pythonJS = document.getElementById('pythonJS')
+python.addEventListener('click', removePython);
+function removePython(e) {
+    let newPython = document.getElementById("pythonJS");
+    let pythonNested = document.getElementById("pythonJS").lastChild;   
+}

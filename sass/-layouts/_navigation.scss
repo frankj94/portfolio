@@ -1,0 +1,75 @@
+.header-navigation__list {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 0.6rem;
+  margin-left: 30rem;
+  // List Items
+  li {
+    padding: 0rem 1rem 0rem 1rem;
+  }
+}
+// Slider below Nav bar highlighting topics START
+.nav-list__slide1 {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.nav-list__slide1:after {
+  // background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 66.5%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.4s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-list__slide1:hover:after {
+  width: 5.2%;
+  // left: 0;
+}
+
+.nav-list__slide2 {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.nav-list__slide2:after {
+  // background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 73.5%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.4s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-list__slide2:hover:after {
+  width: 5.2%;
+  // left: 0;
+}
+
+.nav-list__slide3 {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.nav-list__slide3:after {
+  // background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 80.2%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.4s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-list__slide3:hover:after {
+  width: 7.5%;
+  // left: 0;
+}
+// Slider below Nav bar highlighting topics END
