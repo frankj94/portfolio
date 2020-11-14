@@ -17,6 +17,11 @@
     
     /////////////////////////////////////////////////////-->
 
+      <!-- Bootstrap START -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <!-- Bootstrap END -->
+
+
     <link
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
@@ -245,7 +250,7 @@
           </p>
         </div>
         <div class="skills-img"><img src="./assets/backgrounds/receipts.svg" alt="Receipts" class="receipts"></div>
-        <div class="skills-resume"><a href="https://drive.google.com/file/d/12832mRCCJsfT-qo7jUQg2189N8fbj-TD/view?usp=sharing" target="_blank"><h4>Link to My Resume.</h4></a></div>
+        <div class="skills-resume"><a href="https://drive.google.com/file/d/12832mRCCJsfT-qo7jUQg2189N8fbj-TD/view?usp=sharing" target="_blank" title="Google Drive Link"><h4>Link to My Resume.</h4></a></div>
       </div>
     <!-- Skillset description heading and paragraph END -->
 
@@ -305,9 +310,26 @@
     <!-- Skillset image container three START -->
 
           <div class="skills-list__3 skills-icons">
-            <i class="fab fa-npm npm" title="NPM"></i><i class="fas fa-database database" title="SQL and MongoDB"></i>
-            <i class="fab fa-linux linux" title="Linux"></i><i class="fab fa-aws aws" title="AWS"></i
-            ><i class="fab fa-microsoft microsoft" title="Azure & Windows Server"></i>
+
+            <!-- NPM Skills START -->
+            <i class="fab fa-npm npm" title="NPM" id="npm"><div id="npmJS"></div></i>
+            <!-- NPM Skills END -->
+
+            <!-- Database Skills START -->
+            <i class="fas fa-database database" title="SQL and MongoDB" id="database"><div id="databaseJS"></div></i>
+            <!-- Database Skills END -->
+
+            <!-- Linux Skills START -->
+            <i class="fab fa-linux linux" title="Linux" id="linux"><div id="linuxJS"></div></i>
+            <!-- Linux Skills END -->
+
+            <!-- AWS Skills START -->
+            <i class="fab fa-aws aws" title="AWS" id="aws"><div id="awsJS"></div></i>
+            <!-- AWS Skills END -->
+
+            <!-- Azure Skills START -->
+            <i class="fab fa-microsoft microsoft" title="Azure & Windows Server" id="azure"><div id="azureJS"></div></i>
+            <!-- Azure Skills END -->
           </div>
 
     <!-- Skillset image container three END -->
@@ -315,8 +337,22 @@
     <!-- Skillset image container four START -->
 
           <div class="skills-list__4 skills-icons">
-            <i class="fab fa-docker docker" title="Docker"></i><i class="fab fa-figma figma" title="Figma"></i>
-            <i class="fas fa-wifi networking" title="Networking"></i><i class="fas fa-key security" title="Security"></i>
+
+            <!-- Docker Skills START -->
+            <i class="fab fa-docker docker" title="Docker" id="docker"><div id="dockerJS"></div></i>
+            <!-- Docker Skills END -->
+
+            <!-- Figma Skills START -->
+            <i class="fab fa-figma figma" title="Figma" id="figma"><div id="figmaJS"></div></i>
+            <!-- Figma Skills END -->
+
+            <!-- Networking Skills START -->
+            <i class="fas fa-wifi networking" title="Networking" id="networking"><div id="networkingJS"></div></i>
+            <!-- Networking Skills END -->
+
+            <!-- Security Skills START -->
+            <i class="fas fa-key security" title="Security" id="security"><div id="securityJS"></div></i>
+            <!-- Security Skills END -->
         </div>
 
     <!-- Skillset image container four END -->
@@ -324,7 +360,7 @@
     <!-- Arrow Pointing to Next Page START -->
 
     <!-- Arrow Pointing to Next Page END -->
-<script src="./scripts/skills.js"></script>
+      <script src="./scripts/skills.js"></script>
       </div>
     </main>
 
@@ -333,20 +369,95 @@
     <!-- Work Section START -->
     <main>
       <div class="work" id="work">
-        <img src="https://picsum.photos/400/400" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-          numquam accusamus soluta sunt alias porro laudantium eaque! Numquam
-          saepe quis nisi eveniet alias eos cum eligendi tempore dolores,
-          praesentium enim expedita, nemo beatae repellendus deserunt aliquam ut
-          aspernatur magni! Quos sit explicabo nam, nostrum exercitationem ex
-          animi dolore velit veritatis vitae asperiores deserunt sint aspernatur
-          ratione veniam, alias aut, tenetur sapiente sequi mollitia quidem
-          iste. Facere, quidem facilis! Optio, culpa est blanditiis eum laborum
-          dolorum quis nam! Ab mollitia suscipit fugit hic natus eveniet sed
-          excepturi? Aut molestiae, quod aspernatur provident cum ea, fugit
-          delectus voluptas at aliquam sunt fugiat.
-        </p>
+        <!-- Work Section Heading START -->
+        <div class="work-heading">
+          <h3 class="work-heading__heading">Here are Some of My Projects</h3>
+          <div class="work-heading__img">
+            <!-- Guy riding a bike animated -->
+          </div>
+          <div class="work-heading__list">
+            <ul class="work-list">
+              <li class="work-links"><a href="#" target="_blank" title="My Blog">My Blog</a></li>
+              <li class="work-links"><a href="#" target="_blank" title="My Github Page">My Github</a></li>
+              <li class="work-links"><a href="#" target="_blank" title="My IT Projects">My Flickr (IT Related Projects)</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Work Section Heading END -->
+
+        <!-- Bootstrap Card One START -->
+        
+          <div class="card-deck" style="margin: 1rem;">
+            <div class="card text-black text-center bg-light border-light">
+              <div class="card-header">
+                HTML, CSS, JavaScript
+              </div>
+              <img src="" class="card-img-top" alt="First Project">
+              <div class="card-body">
+                <h5 class="card-title">First Project</h5>
+                <h6 class="card-subtitle">Here is my first project</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia?</p>
+                <a href="#" target="_blank" class="btn btn-primary">Here is a link to it</a>
+              </div>
+            </div>
+         <!-- Bootstrap Card One END -->
+
+         <!-- Bootstrap Card Two START -->
+    
+            <div class="card text-black text-center bg-light border-light">
+                <div class="card-header">
+                Python
+               </div>
+              <img src="" class="card-img-top" alt="Second Project">
+              <div class="card-body">
+                <h5 class="card-title">Second Project</h5>
+                <h6 class="card-subtitle">Here is my second project</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, consectetur.</p>
+                <a href="#" target="_blank" class="btn btn-primary">Here is a link to it</a>
+              </div>
+            </div>
+          <!-- Bootstrap Card Two END -->
+
+           <!-- Bootstrap Card Three START -->
+    
+            <div class="card text-black text-center bg-light border-light">
+                <div class="card-header">
+                VueJS
+               </div>
+              <img src="" class="card-img-top" alt="Second Project">
+              <div class="card-body">
+                <h5 class="card-title">Second Project</h5>
+                <h6 class="card-subtitle">Here is my second project</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, consectetur.</p>
+                <a href="#" target="_blank" class="btn btn-primary">Here is a link to it</a>
+              </div>
+            </div>
+          <!-- Bootstrap Card Three END -->
+
+           <!-- Bootstrap Card Four START -->
+    
+            <div class="card text-black text-center bg-light border-light">
+                <div class="card-header">
+                Python, MongoDB
+               </div>
+              <img src="" class="card-img-top" alt="Second Project">
+              <div class="card-body">
+                <h5 class="card-title">Second Project</h5>
+                <h6 class="card-subtitle">Here is my second project</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, consectetur.</p>
+                <a href="#" target="_blank" class="btn btn-primary">Here is a link to it</a>
+              </div>
+            </div>
+          <!-- Bootstrap Card Four END -->
+
+
+        </div>
+        <!-- Work Section Main START -->
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <!-- Work Section Main END -->
       </div>
     </main>
 
@@ -354,21 +465,20 @@
 
     <!-- Contact Section START -->
     <main>
-      <div class="work" id="work">
-        <img src="https://picsum.photos/400/400" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-          numquam accusamus soluta sunt alias porro laudantium eaque! Numquam
-          saepe quis nisi eveniet alias eos cum eligendi tempore dolores,
-          praesentium enim expedita, nemo beatae repellendus deserunt aliquam ut
-          aspernatur magni! Quos sit explicabo nam, nostrum exercitationem ex
-          animi dolore velit veritatis vitae asperiores deserunt sint aspernatur
-          ratione veniam, alias aut, tenetur sapiente sequi mollitia quidem
-          iste. Facere, quidem facilis! Optio, culpa est blanditiis eum laborum
-          dolorum quis nam! Ab mollitia suscipit fugit hic natus eveniet sed
-          excepturi? Aut molestiae, quod aspernatur provident cum ea, fugit
-          delectus voluptas at aliquam sunt fugiat.
-        </p>
+      <div class="contact" id="contact">
+        <div class="contact-heading">
+          <h2 class="contact-heading__header">Want to Get in Touch?</h2>
+          <div class="contact-heading__paragraph">
+            <p>Do you want to work together? Hire me for a project or position? Simply say hello or game with me?</p>
+            <p>Here are just a few ways you can do that:</p>
+          </div>
+        </div>
+
+        <!-- Contact Final Sentence START -->
+        <div class="contact-final">
+          <p> I'm open to all persons and opportunities!</p>
+        </div>
+        <!-- Contact Final Sentence END -->
       </div>
     </main>
 

@@ -105,7 +105,7 @@ const oldSass = document.getElementById('sass');
 oldSass.addEventListener('click', sassClick);
 function sassClick(e) {
 if (sass.innerHTML === '') {
-  sass.innerHTML = '85%'
+  sass.innerHTML = '80%'
   } else {
   sass.innerHTML = ''
   }
@@ -192,7 +192,7 @@ const oldNode = document.getElementById('node');
 oldNode.addEventListener('click', nodeClick);
 function nodeClick(e) {
 if (node.innerHTML === '') {
-  node.innerHTML = '60%'
+  node.innerHTML = '50%'
   } else {
   node.innerHTML = ''
   }
@@ -235,7 +235,7 @@ const oldBootstrap = document.getElementById('bootstrap');
 oldBootstrap.addEventListener('click', bootstrapClick);
 function bootstrapClick(e) {
 if (bootstrap.innerHTML === '') {
-  bootstrap.innerHTML = '90%'
+  bootstrap.innerHTML = '80%'
   } else {
   bootstrap.innerHTML = ''
   }
@@ -279,7 +279,7 @@ const oldGit = document.getElementById('git');
 oldGit.addEventListener('click', gitClick);
 function gitClick(e) {
 if (git.innerHTML === '') {
-  git.innerHTML = '80%'
+  git.innerHTML = '60%'
   } else {
   git.innerHTML = ''
   }
@@ -366,7 +366,7 @@ const oldWordpress = document.getElementById('wordpress');
 oldWordpress.addEventListener('click', wordpressClick);
 function wordpressClick(e) {
 if (wordpress.innerHTML === '') {
-  wordpress.innerHTML = '90%'
+  wordpress.innerHTML = '85%'
   } else {
   wordpress.innerHTML = ''
   }
@@ -426,61 +426,400 @@ function removePython(e) {
 }
 
 
-// ************************************
-// ----Python END----
-// ************************************
-
 
 // ************************************
-// ----JavaScript END----
+// ----NPM END----
 // ************************************
 
 
-
-// ************************************
-// ----Node START----
-// ************************************
-
-
-// ************************************
-// ----JavaScript END----
-// ************************************
-
+// Create New Element
+let npm = document.createElement('p');
+npm.className = 'npm-skills';
+npm.id = 'npm-skills';
+npm.setAttribute('title', 'NPM Proficiency');
+npm.appendChild(document.createTextNode(''));
+npm.style.setProperty('font-size', '16px')
+document.getElementById('npmJS').appendChild(npm)
 
 
-// ************************************
-// ----Node START----
-// ************************************
+// Grab Old Element
+const oldNPM = document.getElementById('npm');
 
 
-// ************************************
-// ----JavaScript END----
-// ************************************
+// On Click function to add element
+oldNPM.addEventListener('click', npmClick);
+function npmClick(e) {
+if (npm.innerHTML === '') {
+  npm.innerHTML = '70%'
+  } else {
+  npm.innerHTML = ''
+  }
+}
 
 
-
-// ************************************
-// ----Node START----
-// ************************************
-
-
-// ************************************
-// ----JavaScript END----
-// ************************************
-
-
-
-// ************************************
-// ----Node START----
-// ************************************
+// On click function to remove element By Element
+const npmJS = document.getElementById('npmJS')
+npm.addEventListener('click', removeNPM);
+function removeNPM(e) {
+    let newNPM = document.getElementById("npmJS");
+    let npmNested = document.getElementById("npmJS").lastChild;   
+}
 
 
 // ************************************
-// ----JavaScript END----
+// ----NPM END----
 // ************************************
 
 
 
 // ************************************
-// ----Node START----
+// ----Database START----
+// ************************************
+
+// Create New Element
+let database = document.createElement('p');
+database.className = 'database-skills';
+database.id = 'database-skills';
+database.setAttribute('title', 'Database Skills Proficiency');
+database.appendChild(document.createTextNode(''));
+database.style.setProperty('font-size', '16px')
+document.getElementById('databaseJS').appendChild(database)
+
+
+// Grab Old Element
+const oldDatabase = document.getElementById('database');
+
+
+// On Click function to add element
+oldDatabase.addEventListener('click', databaseClick);
+function databaseClick(e) {
+if (database.innerHTML === '') {
+  database.innerHTML = '60%'
+  } else {
+  database.innerHTML = ''
+  }
+}
+
+
+// On click function to remove element By Element
+const databaseJS = document.getElementById('databaseJS')
+database.addEventListener('click', removeDatabase);
+function removeDatabase(e) {
+    let newDatabase = document.getElementById("databaseJS");
+    let databaseNested = document.getElementById("databaseJS").lastChild;   
+}
+
+
+// ************************************
+// ----Database END----
+// ************************************
+
+
+
+// ************************************
+// ----Linux START----
+// ************************************
+
+// Create New Element
+let linux = document.createElement('p');
+linux.className = 'linux-skills';
+linux.id = 'linux-skills';
+linux.setAttribute('title', 'Linux Proficiency');
+linux.appendChild(document.createTextNode(''));
+linux.style.setProperty('font-size', '16px')
+document.getElementById('linuxJS').appendChild(linux)
+
+
+// Grab Old Element
+const oldLinux = document.getElementById('linux');
+
+
+// On Click function to add element
+oldLinux.addEventListener('click', linuxClick);
+function linuxClick(e) {
+if (linux.innerHTML === '') {
+  linux.innerHTML = '70%'
+  } else {
+  linux.innerHTML = ''
+  }
+}
+
+
+// On click function to remove element By Element
+const linuxJS = document.getElementById('linuxJS')
+linux.addEventListener('click', removeLinux);
+function removeLinux(e) {
+    let newLinux = document.getElementById("linuxJS");
+    let linuxNested = document.getElementById("linuxJS").lastChild;   
+}
+
+
+// ************************************
+// ----Linux END----
+// ************************************
+
+
+
+// ************************************
+// ----AWS START----
+// ************************************
+
+
+// Create New Element
+let aws = document.createElement('p');
+aws.className = 'aws-skills';
+aws.id = 'aws-skills';
+aws.setAttribute('title', 'AWS Proficiency');
+aws.appendChild(document.createTextNode(''));
+aws.style.setProperty('font-size', '16px')
+document.getElementById('awsJS').appendChild(aws)
+
+
+// Grab Old Element
+const oldAws = document.getElementById('aws');
+
+
+// On Click function to add element
+oldAws.addEventListener('click', awsClick);
+function awsClick(e) {
+if (aws.innerHTML === '') {
+  aws.innerHTML = '70%'
+  } else {
+  aws.innerHTML = ''
+  }
+}
+
+
+// On click function to remove element By Element
+const awsJS = document.getElementById('awsJS')
+aws.addEventListener('click', removeAws);
+function removeAws(e) {
+    let newAws = document.getElementById("awsJS");
+    let awsNested = document.getElementById("awsJS").lastChild;   
+}
+
+
+// ************************************
+// ----AWS END----
+// ************************************
+
+
+
+// ************************************
+// ----Azure START----
+// ************************************
+
+// Create New Element
+let azure = document.createElement('p');
+azure.className = 'azure-skills';
+azure.id = 'azure-skills';
+azure.setAttribute('title', 'WS & Azure Proficiency');
+azure.appendChild(document.createTextNode(''));
+azure.style.setProperty('font-size', '16px')
+document.getElementById('azureJS').appendChild(azure)
+
+
+// Grab Old Element
+const oldAzure = document.getElementById('azure');
+
+
+// On Click function to add element
+oldAzure.addEventListener('click', azureClick);
+function azureClick(e) {
+if (azure.innerHTML === '') {
+  azure.innerHTML = '80%'
+  } else {
+  azure.innerHTML = ''
+  }
+}
+
+
+// On click function to remove element By Element
+const azureJS = document.getElementById('azureJS')
+azure.addEventListener('click', removeAzure);
+function removeAzure(e) {
+    let newAzure = document.getElementById("azureJS");
+    let azureNested = document.getElementById("azureJS").lastChild;   
+}
+
+
+// ************************************
+// ----Azure END----
+// ************************************
+
+
+
+// ************************************
+// ----Docker START----
+// ************************************
+
+// Create New Element
+let docker = document.createElement('p');
+docker.className = 'docker-skills';
+docker.id = 'docker-skills';
+docker.setAttribute('title', 'Docker Proficiency');
+docker.appendChild(document.createTextNode(''));
+docker.style.setProperty('font-size', '16px')
+document.getElementById('dockerJS').appendChild(docker)
+
+
+// Grab Old Element
+const oldDocker = document.getElementById('docker');
+
+
+// On Click function to add element
+oldDocker.addEventListener('click', dockerClick);
+function dockerClick(e) {
+if (docker.innerHTML === '') {
+  docker.innerHTML = '65%'
+  } else {
+  docker.innerHTML = ''
+  }
+}
+
+
+// On click function to remove element By Element
+const dockerJS = document.getElementById('dockerJS')
+docker.addEventListener('click', removeDocker);
+function removeDocker(e) {
+    let newDocker = document.getElementById("dockerJS");
+    let dockerNested = document.getElementById("dockerJS").lastChild;   
+}
+
+
+// ************************************
+// ----Docker END----
+// ************************************
+
+
+
+// ************************************
+// ----Figma START----
+// ************************************
+
+// Create New Element
+let figma = document.createElement('p');
+figma.className = 'figma-skills';
+figma.id = 'figma-skills';
+figma.setAttribute('title', 'Figma Proficiency');
+figma.appendChild(document.createTextNode(''));
+figma.style.setProperty('font-size', '16px')
+document.getElementById('figmaJS').appendChild(figma)
+
+
+// Grab Old Element
+const oldFigma = document.getElementById('figma');
+
+
+// On Click function to add element
+oldFigma.addEventListener('click', figmaClick);
+function figmaClick(e) {
+if (figma.innerHTML === '') {
+  figma.innerHTML = '70%'
+  } else {
+  figma.innerHTML = ''
+  }
+}
+
+
+// On click function to remove element By Element
+const figmaJS = document.getElementById('figmaJS')
+figma.addEventListener('click', removeFigma);
+function removeFigma(e) {
+    let newFigma = document.getElementById("figmaJS");
+    let figmaNested = document.getElementById("figmaJS").lastChild;   
+}
+
+
+// ************************************
+// ----Figma END----
+// ************************************
+
+
+
+// ************************************
+// ----Networking START----
+// ************************************
+
+// Create New Element
+let networking = document.createElement('p');
+networking.className = 'networking-skills';
+networking.id = 'networking-skills';
+networking.setAttribute('title', 'Networking Proficiency');
+networking.appendChild(document.createTextNode(''));
+networking.style.setProperty('font-size', '16px')
+document.getElementById('networkingJS').appendChild(networking)
+
+
+// Grab Old Element
+const oldNetworking = document.getElementById('networking');
+
+
+// On Click function to add element
+oldNetworking.addEventListener('click', networkingClick);
+function networkingClick(e) {
+if (networking.innerHTML === '') {
+  networking.innerHTML = '80%'
+  } else {
+  networking.innerHTML = ''
+  }
+}
+
+
+// On click function to remove element By Element
+const networkingJS = document.getElementById('networkingJS')
+networking.addEventListener('click', removeNetworking);
+function removeNetworking(e) {
+    let newNetworking = document.getElementById("networkingJS");
+    let networkingNested = document.getElementById("networkingJS").lastChild;   
+}
+
+
+// ************************************
+// ----Networking END----
+// ************************************
+
+
+
+// ************************************
+// ----Security START----
+// ************************************
+
+
+// Create New Element
+let security = document.createElement('p');
+security.className = 'security-skills';
+security.id = 'security-skills';
+security.setAttribute('title', 'Security Proficiency');
+security.appendChild(document.createTextNode(''));
+security.style.setProperty('font-size', '16px')
+document.getElementById('securityJS').appendChild(security)
+
+
+// Grab Old Element
+const oldSecurity = document.getElementById('security');
+
+
+// On Click function to add element
+oldSecurity.addEventListener('click', securityClick);
+function securityClick(e) {
+if (security.innerHTML === '') {
+  security.innerHTML = '80%'
+  } else {
+  security.innerHTML = ''
+  }
+}
+
+
+// On click function to remove element By Element
+const securityJS = document.getElementById('securityJS')
+security.addEventListener('click', removeSecurity);
+function removeSecurity(e) {
+    let newSecurity = document.getElementById("securityJS");
+    let securityNested = document.getElementById("securityJS").lastChild;   
+}
+
+
+// ************************************
+// ----Security END----
 // ************************************
