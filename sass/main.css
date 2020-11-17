@@ -48,6 +48,10 @@ main {
 }
 
 .toggle {
+  cursor: pointer;
+}
+
+.toggle {
   width: 2rem;
   height: 2rem;
   -ms-flex-item-align: end;
@@ -90,7 +94,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
 }
 
 .header-navigation .home-logo__img {
@@ -101,10 +105,11 @@ main {
 }
 
 .header-navigation #container {
-  margin: 0;
-  padding: 0;
-  -webkit-perspective: 15px;
-          perspective: 15px;
+  margin: 0rem;
+  padding: 0rem;
+  -webkit-perspective: 45px;
+          perspective: 45px;
+  z-index: 100;
 }
 
 #main-background {
@@ -156,13 +161,17 @@ main {
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 0.6rem;
+          align-items: end;
   margin-left: 30rem;
 }
 
 .header-navigation__list li {
-  padding: 0rem 1rem 0rem 1rem;
+  padding: 0rem 1rem 0rem 0.5rem;
+}
+
+.header-navigation__list li a:hover {
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .nav-list__slide1 {
@@ -174,7 +183,7 @@ main {
 .nav-list__slide1:after {
   bottom: 0;
   content: "";
-  height: 2px;
+  height: 3px;
   left: 66.5%;
   position: absolute;
   background: #fff;
@@ -184,7 +193,7 @@ main {
 }
 
 .nav-list__slide1:hover:after {
-  width: 5.2%;
+  width: 5.4%;
 }
 
 .nav-list__slide2 {
@@ -197,7 +206,7 @@ main {
   bottom: 0;
   content: "";
   height: 2px;
-  left: 73.5%;
+  left: 73%;
   position: absolute;
   background: #fff;
   -webkit-transition: width 0.4s ease 0s, left 0.3s ease 0s;
@@ -206,7 +215,7 @@ main {
 }
 
 .nav-list__slide2:hover:after {
-  width: 5.2%;
+  width: 5.5%;
 }
 
 .nav-list__slide3 {
@@ -219,7 +228,7 @@ main {
   bottom: 0;
   content: "";
   height: 2px;
-  left: 80.2%;
+  left: 79%;
   position: absolute;
   background: #fff;
   -webkit-transition: width 0.4s ease 0s, left 0.3s ease 0s;
@@ -228,7 +237,7 @@ main {
 }
 
 .nav-list__slide3:hover:after {
-  width: 7.5%;
+  width: 7.8%;
 }
 
 html {

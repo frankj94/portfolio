@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: row;
   // padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
   // Home Logo
   .home-logo__img {
     height: 4rem;
@@ -28,9 +28,10 @@
   }
   // Header Nav List
   #container {
-    margin: 0;
-    padding: 0;
-    perspective: 15px;
+    margin: 0rem;
+    padding: 0rem;
+    perspective: 45px;
+    z-index: 100;
   }
 }
 // .header-wrapper__end {
