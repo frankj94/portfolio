@@ -3,9 +3,9 @@ html {
   overflow-y: scroll;
 }
 
-main {
+.main {
   height: 100vh;
   width: 100vw;
   scroll-snap-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 1.5rem;
 }

@@ -1,0 +1,83 @@
+// Work Heading START
+.work-heading {
+  margin: 1rem 1rem 6rem 1rem;
+  background-color: #b29e9727;
+  border-radius: 25px;
+  width: 96%;
+  height: auto;
+
+  &:hover {
+    transition: 1s ease;
+    background-color: rgba(128, 128, 128, 0.308);
+  }
+
+  h3 {
+    margin: 0.9rem;
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+.work-heading__list {
+}
+.work-list {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  justify-content: space-around;
+  font-size: 1.1rem;
+  list-style: none;
+  padding: 0.5rem;
+
+  a {
+    text-decoration: underline;
+    color: black;
+
+    &:hover {
+      color: #a8d4d2;
+      transition: 1s ease;
+    }
+  }
+}
+// Work Heading END
+
+// Bootstrap Cards modifications START
+
+#card-deck {
+  width: 90%;
+  margin-left: 3rem;
+}
+
+.card-header {
+  &:hover {
+    background-color: #a8d4d2;
+    transition: 1s ease;
+  }
+}
+
+#card-header {
+  background-color: #b29e9727;
+}
+
+#card-body {
+  background-color: #b29e9727;
+}
+
+#btn-primary {
+  background-color: #a8d4d2;
+  border: #a8d4d2;
+  color: black;
+
+  &:hover {
+    background-color: #7fa3a1;
+    transition: 0.5s ease;
+  }
+}
+// Bootstrap Cards modifications END

@@ -2,10 +2,15 @@
   display: flex;
   background-color: #b29e9727;
   border-radius: 25px;
-  margin: 1rem 1rem 2rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
   padding: 1rem;
-  width: 85%;
+  width: 96%;
   height: auto;
+
+  &:hover {
+    transition: 1s ease;
+    background-color: rgba(128, 128, 128, 0.308);
+  }
 }
 // Skills Headings START
 .skills-heading {
@@ -13,7 +18,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   margin-right: 1rem;
   margin-left: 1rem;
   border-radius: 25px;
@@ -22,23 +27,18 @@
 
   h2 {
     text-align: center;
-
+    text-decoration: underline;
     padding-bottom: 1rem;
     font-size: 1.9rem;
     font-weight: 500;
   }
-
-  &:hover {
-    background-color: #a8d4d2;
-    transition: 1s ease;
-  }
 }
 .skills-heading__description1 {
   font-size: 1.1rem;
-  padding: 0.4rem;
+  padding: 0.1rem;
 }
 .skills-heading__description2 {
-  font-size: 14px;
+  font-size: 0.8rem;
   font-style: italic;
 }
 .skills-img {
@@ -52,13 +52,15 @@
   width: 8rem;
   display: flex;
   align-items: flex-end;
+  font-size: 1rem;
 
   a {
     text-decoration: none;
     color: black;
 
     &:hover {
-      color: #a8d4d2;
+      color: #91d6d3;
+      transition: 0.5s ease;
     }
   }
 }
@@ -66,19 +68,19 @@
 
 // Skill Icons START
 .skills-icons {
-  width: 35rem;
-  height: 4rem;
+  width: 40rem;
+  height: 5rem;
   background-color: #b29e9727;
   margin-bottom: 1rem;
   border-radius: 25px;
   display: flex;
-  justify-content: center;
   justify-content: space-around;
-  align-items: center;
 
   i {
-    font-size: 2rem;
+    padding-top: 1rem;
+    font-size: 2.5rem;
     color: gray;
+    align-self: center;
 
     &:hover {
       cursor: pointer;
@@ -86,6 +88,7 @@
   }
 
   &:hover {
+    transition: 1s ease;
     background-color: rgba(128, 128, 128, 0.308);
   }
 }
@@ -93,6 +96,7 @@
 // Skills List One
 // ############################
 .skills-list__1 {
+  margin-top: 1rem;
   // HTML
   .html {
     &:hover {

@@ -1,0 +1,227 @@
+.contact-heading {
+  margin: 1rem 1rem 1rem 1rem;
+  background-color: #b29e9727;
+  border-radius: 25px;
+  width: 96%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    padding: 0.5rem;
+    margin: 0.9rem;
+
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  &:hover {
+    transition: 1s ease;
+    background-color: rgba(128, 128, 128, 0.308);
+  }
+}
+
+// Contact Methods START
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  margin: 0rem 2rem 0rem 1rem;
+
+  div {
+    margin: 1rem;
+  }
+}
+
+// Contact Methods END
+
+// Email START
+.contact-method__form {
+  width: 25%;
+  height: 65vh;
+  background-color: #b29e9727;
+  border-radius: 15px;
+
+  .contact-form {
+    padding: 0.5rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      margin: 0rem 1rem 1rem 1rem;
+    }
+    label {
+      font-size: small;
+    }
+    input {
+      border-radius: 5px;
+      text-indent: 5px;
+
+      &:focus {
+        border: solid 3px #a8d4d2;
+      }
+    }
+  }
+
+  &:hover {
+    transition: 1s ease;
+    background-color: rgba(128, 128, 128, 0.308);
+  }
+
+  textarea {
+    border-radius: 5px;
+    text-indent: 5px;
+
+    &:focus {
+      border: solid 3px #a8d4d2;
+    }
+  }
+
+  .comment-submit {
+    input {
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #a8d4d2;
+        transition: 1s ease;
+      }
+    }
+  }
+  .contact-form__heading {
+    display: flex;
+    padding: 1px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+// Email END
+
+// Blog START
+.contact-method__blog {
+  width: 25%;
+  background-color: #b29e9727;
+  border-radius: 15px;
+  height: 65vh;
+
+  h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .blog__heading {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  &:hover {
+    transition: 1s ease;
+    background-color: rgba(128, 128, 128, 0.308);
+  }
+
+  p {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  button {
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    margin-left: 50%;
+
+    &:hover {
+      background-color: #a8d4d2;
+      transition: 1s ease;
+    }
+
+    a {
+      color: black;
+    }
+  }
+}
+// Blog END
+
+// Live&Give START
+
+.contact-method__welive {
+  width: 25%;
+  height: 65vh;
+  background-color: #b29e9727;
+  border-radius: 15px;
+  text-align: center;
+  padding: 1rem;
+
+  &:hover {
+    transition: 1s ease;
+    background-color: rgba(128, 128, 128, 0.308);
+  }
+
+  .welive-para {
+    width: 100%;
+    text-align: left;
+    margin: 0%;
+  }
+}
+
+.welive-logo {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+// Live&Give END
+
+// Social Icons START
+
+.contact-method__socials {
+  width: 25%;
+  height: 65vh;
+  background-color: #b29e9727;
+  border-radius: 15px;
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  &:hover {
+    transition: 1s ease;
+    background-color: rgba(128, 128, 128, 0.308);
+  }
+}
+.links-socials {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  a {
+    color: black;
+    font-size: 2rem;
+  }
+}
+
+.links-gaming {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  a {
+    color: black;
+    font-size: 2rem;
+  }
+
+  .la-gamepad:hover {
+    color: #ce011c;
+  }
+
+  .la-xbox:hover {
+    color: #10780f;
+  }
+}
+
+// Social Icons END

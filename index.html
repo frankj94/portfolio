@@ -46,7 +46,8 @@
     <script src="./scripts/snap.js"></script>
   </head>
   <body id="body">
-    <main>
+      <!-- Main START -->
+      <section class="main">
       <!-- Header Wrapper START -->
       <header class="global-header">
         <nav class="header-navigation">
@@ -72,7 +73,7 @@
               <a class="nav-list__slide2" href="#work">Work</a>
             </li>
             <li class="header-navigation__item">
-              <a class="nav-list__slide3" href="#">Contact</a>
+              <a class="nav-list__slide3" href="#contact">Contact</a>
             </li>
           </ul>
           <!-- Navigation END -->
@@ -96,7 +97,10 @@
         <script src="scripts/logo-animate.js"></script>
       </header>
 
-      <!-- SVG background image START -->
+
+
+    
+          <!-- SVG background image START -->
       <div class="header-wrapper__end">
         <svg
           viewBox="0 0 1920 412"
@@ -153,12 +157,10 @@
         </svg>
       </div>
       <!-- SVG background image END -->
-
-      <!-- Main START -->
-      <section class="main">
+      <aside class="home">
         <!-- Brief description of myself START -->
-        <div class="main-section">
-          <section class="action" id="action">
+        <div class="home-section">
+          <aside class="action" id="action">
             <h2>
               Hey there
               <div class="hello-animate">&#128075;&#127997;</div>
@@ -171,7 +173,7 @@
               repellendus distinctio, impedit commodi consectetur eveniet velit
               ad? Ex, at facere eligendi minus eos illo.
             </p>
-          </section>
+          </aside>
         </div>
 
         <!-- Brief description of myself END -->
@@ -186,6 +188,9 @@
           <a href="#"><i class="lab la-linkedin" title="LinkedIn"></i></a>
           <a href="#"><i class="lab la-twitter" title="Twitter"></i></a>
           <a href="#"><i class="lab la-whatsapp" title="WhatsApp"></i></a>
+        </div>
+        <div class="socials-email">
+         <a href="mailto:fwalker94@icloud.com" class="socials-email__send">Send Me A Email!</a>
         </div>
         <!-- Social Media END -->
       </section>
@@ -231,11 +236,11 @@
         </aside>
       </div>
       <!-- Frosh RSS Feed and Logo END -->
-    </main>
+    </section>
 
     <!-- Skills Section START -->
 
-    <main>
+    <section class="main">
       <div class="skills" id="skills">
 
     <!-- Skillset description heading and paragraph START -->
@@ -246,11 +251,11 @@
             From Development to IT - I'm hoping to be a jack of all trades!
           </p>
           <p class="skills-heading__description2">
-            Hint: Click icons to see my conservative guestimate of my proficiency.
+            Click icons to see my conservative 'guestimate' of my proficiency.
           </p>
         </div>
         <div class="skills-img"><img src="./assets/backgrounds/receipts.svg" alt="Receipts" class="receipts"></div>
-        <div class="skills-resume"><a href="https://drive.google.com/file/d/12832mRCCJsfT-qo7jUQg2189N8fbj-TD/view?usp=sharing" target="_blank" title="Google Drive Link"><h4>Link to My Resume.</h4></a></div>
+        <div class="skills-resume"><a href="https://drive.google.com/file/d/12832mRCCJsfT-qo7jUQg2189N8fbj-TD/view?usp=sharing" target="_blank" title="Google Drive Link"><p>Link to My Resume.</p></a></div>
       </div>
     <!-- Skillset description heading and paragraph END -->
 
@@ -362,17 +367,18 @@
     <!-- Arrow Pointing to Next Page END -->
       <script src="./scripts/skills.js"></script>
       </div>
-    </main>
+    </section>
 
     <!-- Skills Section END -->
 
     <!-- Work Section START -->
-    <main>
+    <section class="main">
       <div class="work" id="work">
         <!-- Work Section Heading START -->
         <div class="work-heading">
           <h3 class="work-heading__heading">Here are Some of My Projects</h3>
           <div class="work-heading__img">
+            <p class="work-heading__more">Visit My Pages to See More!</p>
             <!-- Guy riding a bike animated -->
           </div>
           <div class="work-heading__list">
@@ -387,17 +393,17 @@
 
         <!-- Bootstrap Card One START -->
         
-          <div class="card-deck" style="margin: 1rem;">
+          <div class="card-deck" id="card-deck">
             <div class="card text-black text-center bg-light border-light">
-              <div class="card-header">
+              <div class="card-header" id="card-header">
                 HTML, CSS, JavaScript
               </div>
               <img src="" class="card-img-top" alt="First Project">
-              <div class="card-body">
+              <div class="card-body" id="card-body">
                 <h5 class="card-title">First Project</h5>
                 <h6 class="card-subtitle">Here is my first project</h6>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia?</p>
-                <a href="#" target="_blank" class="btn btn-primary">Here is a link to it</a>
+                <a href="#" target="_blank" class="btn btn-primary" id="btn-primary">Here is a link to it</a>
               </div>
             </div>
          <!-- Bootstrap Card One END -->
@@ -405,31 +411,31 @@
          <!-- Bootstrap Card Two START -->
     
             <div class="card text-black text-center bg-light border-light">
-                <div class="card-header">
+                <div class="card-header" id="card-header">
                 Python
                </div>
               <img src="" class="card-img-top" alt="Second Project">
-              <div class="card-body">
+              <div class="card-body" id="card-body">
                 <h5 class="card-title">Second Project</h5>
                 <h6 class="card-subtitle">Here is my second project</h6>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, consectetur.</p>
-                <a href="#" target="_blank" class="btn btn-primary">Here is a link to it</a>
+                <a href="#" target="_blank" class="btn btn-primary" id="btn-primary">Here is a link to it</a>
               </div>
             </div>
           <!-- Bootstrap Card Two END -->
 
            <!-- Bootstrap Card Three START -->
     
-            <div class="card text-black text-center bg-light border-light">
-                <div class="card-header">
+            <div class="card text-black text-center bg-light border-light" id="card">
+                <div class="card-header" id="card-header">
                 VueJS
                </div>
               <img src="" class="card-img-top" alt="Second Project">
-              <div class="card-body">
+              <div class="card-body" id="card-body">
                 <h5 class="card-title">Second Project</h5>
                 <h6 class="card-subtitle">Here is my second project</h6>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, consectetur.</p>
-                <a href="#" target="_blank" class="btn btn-primary">Here is a link to it</a>
+                <a href="#" target="_blank" class="btn btn-primary" id="btn-primary">Here is a link to it</a>
               </div>
             </div>
           <!-- Bootstrap Card Three END -->
@@ -437,15 +443,15 @@
            <!-- Bootstrap Card Four START -->
     
             <div class="card text-black text-center bg-light border-light">
-                <div class="card-header">
+                <div class="card-header" id="card-header">
                 Python, MongoDB
                </div>
               <img src="" class="card-img-top" alt="Second Project">
-              <div class="card-body">
+              <div class="card-body" id="card-body">
                 <h5 class="card-title">Second Project</h5>
                 <h6 class="card-subtitle">Here is my second project</h6>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, consectetur.</p>
-                <a href="#" target="_blank" class="btn btn-primary">Here is a link to it</a>
+                <a href="#" target="_blank" class="btn btn-primary" id="btn-primary">Here is a link to it</a>
               </div>
             </div>
           <!-- Bootstrap Card Four END -->
@@ -459,29 +465,134 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <!-- Work Section Main END -->
       </div>
-    </main>
+    </section>
 
     <!-- Work Section END -->
 
     <!-- Contact Section START -->
-    <main>
+    <section class="main">
       <div class="contact" id="contact">
         <div class="contact-heading">
-          <h2 class="contact-heading__header">Want to Get in Touch?</h2>
+          <h3 class="contact-heading__header">Want to Get in Touch?</h2>
           <div class="contact-heading__paragraph">
             <p>Do you want to work together? Hire me for a project or position? Simply say hello or game with me?</p>
             <p>Here are just a few ways you can do that:</p>
           </div>
         </div>
+<div class="contact-method">
 
-        <!-- Contact Final Sentence START -->
-        <div class="contact-final">
-          <p> I'm open to all persons and opportunities!</p>
-        </div>
-        <!-- Contact Final Sentence END -->
+  <!-- Email Contact Form START -->
+  <div class="contact-method__form">
+    <div class="contact-form__heading">
+      <h4>Send Me an Email!</h4>
+      <i class="far fa-paper-plane"></i>
+    </div>
+    <form action="" class="contact-form">
+      <div class="name-container">
+      <label for="name"> Enter Your Name:</label>
+      <input type="text" name="text" id="form-name" placeholder="Enter Your Name">
       </div>
-    </main>
+      <div class="email-container">
+        <label for="email">Enter Your Email:</label>
+      <input type="email" name="email" id="form-email" placeholder="Enter Your Email">
+      </div>
+      <div class="comment-container">
+        <label for="comment">Leave a Comment:</label>
+      <textarea name="textarea" id="comment-text" cols="30" rows="3" placeholder="Leave A Comment..."></textarea>
+      </div>
+      <div class="comment-submit">
+        <input type="submit" value="Send!" title="Sends Me A Email!">
+      </div>
+    </form>
+  </div>
+  <!-- Email Contact Form END -->
 
+  <!-- Blog Contact START -->
+  <div class="contact-method__blog">
+    <div class="contact-blog__heading">
+      <div class="blog-heading">
+        <h4 class="blog-heading__header">
+          Check Out My Blog!
+        </h4>
+      </div>
+      <a href="https://www.froshtech.dev/" target="blank" title="Frosh Technologies">
+      <img src="./assets/Logos/frosh-logo.svg" alt="Blog Logo" class="blog__heading">
+       </a>
+    </div>
+    <div class="contact-blog__description"><p>In my blog I focus on the foundational skills required to get a job in the IT or Programming industry.</p>
+    
+      <button><a href="https://www.froshtech.dev/" title="Frosh Technologies">Visit It Here!</a></button>
+
+    </div>
+  </div>
+  <!-- Blog Contact END -->
+
+  <!-- Non-Profit START -->
+  <div class="contact-method__welive">
+    <div class="welive-heading">
+      <h4 class="welive-heading__header">
+        The Live & Give Foundation
+      </h4>
+      <div class="welive-img">
+        <a href="https://weliveandgive.org/" target="_blank" title="The Live & Give Foundation"><img src="./assets/Logos/live&giveLogo.svg" alt="The Live and Give Foundation Logo" class="welive-logo"></a>
+      </div>
+      <div class="welive-para">
+        <p>We Live & Give is a non-profit that is focused on empowering the youth by providing mentoring, tutoring and training in the areas of Aviation, Media-Arts and Entrepeneurship.</p>
+      </div>
+    </div>
+  </div>
+<!-- Non-Profit END -->
+
+
+<!-- Social Media Contact START -->
+  <div class="contact-method__socials">
+    <div class="links-socials">
+      <h4 class="link-socials__heading">Socials</h4>
+      <a href="#"><i class="lab la-facebook" title="Facebook"></i></a>
+      <a href="#"><i class="lab la-flickr" title="Flickr"></i></a>
+      <a href="#"><i class="lab la-github" title="GitHub"></i></a>
+      <a href="#"><i class="lab la-instagram" title="Instagram"></i></a>
+      <a href="#"><i class="lab la-linkedin" title="LinkedIn"></i></a>
+      <a href="#"><i class="lab la-twitter" title="Twitter"></i></a>
+      <a href="#"><i class="lab la-whatsapp" title="WhatsApp"></i></a>
+    </div>
+    <div class="links-gaming">
+      <h4 class="links-gaming__heading">Gaming</h4>
+      <a href=""><i class="lab la-playstation" title="PlayStation"></i></a>
+      <a href=""><i class="lab la-xbox" title="Xbox"></i></a>
+      <a href=""><i class="las la-gamepad" title="Nintendo"></i></a>
+      <a href=""><i class="lab la-steam" title="Steam"></i></a>
+      <a href=""><i class="lab la-battle-net" title="Battle.net"></i></a>
+    </div>
+  </div>
+<!-- Social Media Contact END -->
+  </div>
+
+      </div>
+
+<div class="footer-background">
+  <img src="" alt="" class="footer-background__svg">
+</div>
+
+</section>
     <!-- Contact Section END -->
+
+           <!-- Footer Section START -->
+
+   
+      <footer class="footer-container">
+        
+        <!-- Contact Final Sentence START -->
+          <p> I'm open to discussing with all persons about any opportunities!</p>
+        <!-- Contact Final Sentence END -->
+        
+        <ul class="footer-list">
+          <li class="footer-list__items madeby">Made By: &#169; Frank Walker 2020</li>
+          <li class="footer-list__items flag"> | From: Nassau, Bahamas <img src="./assets/icons/flags/bahamas.svg" alt="bahamas-flag" class="bahamas-flag"> |</li>
+          <li class="footer-list__items">Reach Out to Me! &#127881;</li>
+        </ul>
+      </footer>
+
+    <!-- Footer Section START -->
   </body>
 </html>
