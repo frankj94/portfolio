@@ -708,6 +708,18 @@ html {
   color: #10780f;
 }
 
+#footer-background__svg {
+  fill: #a8d4d2;
+  position: absolute;
+  width: 102%;
+  height: auto;
+  left: -1%;
+  top: 365%;
+  z-index: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .home {
   z-index: 15;
   border-radius: 15px;

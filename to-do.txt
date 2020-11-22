@@ -1,4 +1,14 @@
-1) homepage logo snap to the corner and transform to the favicon
-when you scroll down
-
-2) RSS feed or preview tool for frosh tech
+1) Add Links to thing: Home logo, Socials, Skills Section, Socials at the bottom
+2) French Language Toggle
+3) Dark Mode Toggle 
+4) Animate Waving HTML emoticon
+5) Frosh Tech Feed
+6) Link To Resume Hover Color
+7) Animate Skills Section
+8) Actually do Projects in those languages and upload to Github
+9) Create iframe or image for the projects in Skills
+10) Form JavaScript and PHP
+11) Add obscurity with JavaScript to stop bots from stealing credentials
+12) SVG background
+13) Make little guy riding bicycle for skills Section
+14) Make page stick when scrolling
