@@ -1,3 +1,9 @@
+.contact {
+  position: absolute;
+  z-index: 10;
+  top: 310%;
+}
+
 .contact-heading {
   margin: 1rem 1rem 1rem 1rem;
   background-color: #b29e9727;
@@ -13,7 +19,7 @@
     padding: 0.5rem;
     margin: 0.9rem;
 
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     font-weight: 500;
     text-decoration: underline;
   }
@@ -131,10 +137,10 @@
   }
 
   button {
+    height: 5%;
+    width: 95%;
     border-radius: 5px;
-    padding: 0.5rem;
-    margin-bottom: 2rem;
-    margin-left: 50%;
+    margin-top: 25%;
 
     &:hover {
       background-color: #a8d4d2;
@@ -156,23 +162,41 @@
   background-color: #b29e9727;
   border-radius: 15px;
   text-align: center;
-  padding: 1rem;
 
   &:hover {
     transition: 1s ease;
     background-color: rgba(128, 128, 128, 0.308);
   }
 
+  h4 {
+    text-align: center;
+  }
+
   .welive-para {
-    width: 100%;
     text-align: left;
-    margin: 0%;
+    height: 50%;
+    width: 100%;
+  }
+
+  button {
+    border-radius: 5px;
+    width: 100%;
+    height: 5%;
+    margin-top: 13%;
+
+    &:hover {
+      background-color: #a8d4d2;
+      transition: 1s ease;
+    }
+
+    a {
+      color: black;
+    }
   }
 }
 
 .welive-logo {
-  width: 100%;
-  margin-top: 1rem;
+  width: 90%;
 }
 
 // Live&Give END
@@ -225,3 +249,16 @@
 }
 
 // Social Icons END
+
+// SVG Background START
+#footer-background {
+  fill: $primary-color;
+  position: absolute;
+  width: 100vw;
+  height: 40vh;
+  top: 395%;
+  z-index: 0;
+  transform: rotate(180deg);
+}
+
+// SVG Background END

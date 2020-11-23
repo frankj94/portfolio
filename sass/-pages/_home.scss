@@ -1,21 +1,21 @@
 // Heading START
 .home {
-  z-index: 15;
   border-radius: 15px;
   display: flex;
   align-items: center;
 
   .home-section {
     position: absolute;
-    top: 30%;
-    left: 2%;
+    top: 20%;
+    left: 4%;
     width: 40vw;
     border-radius: 15px;
     padding: 1rem;
+    background-color: #b29e9727;
 
     &:hover {
-      background-color: rgba(128, 128, 128, 0.103);
       transition: 1s ease;
+      background-color: rgba(128, 128, 128, 0.308);
     }
   }
 
@@ -37,18 +37,21 @@
 .socials {
   position: absolute;
   z-index: 15;
-  left: 2%;
+  left: 4%;
   top: 80%;
-  color: rgba(128, 128, 128, 0.911);
   font-size: 3rem;
   text-align: center;
   width: 40vw;
   height: 10vh;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b29e9727;
 
   &:hover {
-    background-color: rgba(128, 128, 128, 0.103);
     transition: 1s ease;
+    background-color: rgba(128, 128, 128, 0.308);
   }
   a {
     text-decoration: none;
@@ -82,10 +85,17 @@
 
 .frosh {
   position: absolute;
-  right: 10%;
-  top: 40%;
+  right: 4%;
+  top: 30%;
   width: 27rem;
-  height: 30rem;
+  height: 25rem;
+  background-color: #b29e9727;
+  border-radius: 15px;
+
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.308);
+    transition: 1s ease;
+  }
 
   aside {
     display: flex;
@@ -94,11 +104,6 @@
     height: auto;
     border-radius: 15px;
     padding-bottom: 1rem;
-
-    &:hover {
-      background-color: rgba(128, 128, 128, 0.103);
-      transition: 1s ease;
-    }
   }
 }
 
@@ -109,7 +114,7 @@
   align-self: center;
 }
 .frosh-logo__container {
-  margin: 2% 2% 1% 2%;
+  margin: 1% 1% 1% 2%;
 }
 .frosh-logo__img {
   width: 100%;
@@ -131,6 +136,13 @@
       text-decoration: none;
     }
 
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      text-decoration: underline;
+      margin-bottom: 0.3rem;
+    }
+
     p {
       font-style: italic;
       text-decoration: none;
@@ -141,8 +153,8 @@
 .post-container {
   border-radius: 15px;
   background-color: #b29e9727;
-  margin: 1%;
-  padding: 1%;
+  margin: 2.5%;
+  padding: 0.2%;
   padding-left: 3%;
   margin-right: 4%;
 
@@ -154,3 +166,13 @@
 // Frosh Feed END
 
 // Frosh Tech Blog END
+#socials-email {
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  margin: 0%;
+}
+#socials-email__send {
+  font-size: 1.1rem;
+  color: black;
+}

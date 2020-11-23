@@ -1,11 +1,26 @@
-html {
-  scroll-snap-type: y proximity;
-  overflow-y: scroll;
+html,
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.portfolio-snap {
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-points-y: repeat(100vh);
+  position: relative;
+  scroll-snap-type: y mandatory;
 }
 
 .main {
   height: 100vh;
-  width: 100vw;
   scroll-snap-align: center;
-  margin-bottom: 1.5rem;
+  scroll-snap-stop: always;
+}
+
+.footer-container {
+  height: 20vh;
+  overflow-y: hidden;
+  scroll-snap-align: end;
+  scroll-snap-stop: always;
 }

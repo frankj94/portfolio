@@ -1,0 +1,21 @@
+.hello-animate::after {
+  content: "👋🏽";
+  animation: emoji 2s infinite;
+}
+
+@keyframes emoji {
+  50% {
+    content: "👊🏽";
+  }
+}
+.toolbelt-link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+
+  &:hover {
+    color: $primary-color;
+  }
+}

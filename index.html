@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="#" />
-    <meta name="description" content="#" />
+    <meta name="description" content="Frank Walker's portfolio website for developer position. Contains information about developer and IT skillsets." />
     <link rel="canonical" href="www.frankwalker.me" />
     <link rel="stylesheet" type="text/css" href="./sass/main.css" />
     <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
@@ -46,13 +46,14 @@
     <script src="./scripts/snap.js"></script>
   </head>
   <body id="body">
+    <div class="portfolio-snap">
       <!-- Main START -->
-      <section class="main">
+      <section class="main snap">
       <!-- Header Wrapper START -->
       <header class="global-header">
         <nav class="header-navigation">
           <!-- Home logo START -->
-          <a href="#" class="header-navigation__button" title="Homepage">
+          <a href="https://www.frankwalker.me" class="header-navigation__button" title="Homepage">
             <div id="container">
               <img
                 src="./assets/Logos/portfolio-logo-header-10-16-2020.svg"
@@ -163,15 +164,12 @@
           <aside class="action" id="action">
             <h2>
               Hey there
-              <div class="hello-animate">&#128075;&#127997;</div>
+              <div class="hello-animate"></div>
               My name is
               <em style="font-weight: bolder">Frank!</em>
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto adipisci magni ratione natus nobis voluptate
-              repellendus distinctio, impedit commodi consectetur eveniet velit
-              ad? Ex, at facere eligendi minus eos illo.
+              I'm a Software Developer who also has a fair bit of IT experience; I can build your WebApp, Website,  or set up the Physical Infrastructure! Reach out to me if you want to work together! You can also see my full toolbelt <a href="#skills" class="toolbelt-link">below</a>
             </p>
           </aside>
         </div>
@@ -189,8 +187,8 @@
           <a href="#"><i class="lab la-twitter" title="Twitter"></i></a>
           <a href="#"><i class="lab la-whatsapp" title="WhatsApp"></i></a>
         </div>
-        <div class="socials-email">
-         <a href="mailto:fwalker94@icloud.com" class="socials-email__send">Send Me A Email!</a>
+        <div class="socials-email" id="socials-email">
+         <a href="mailto:fwalker94@icloud.com" class="socials-email__send" id="socials-email__send">Send Me A Email!</a>
         </div>
         <!-- Social Media END -->
       </section>
@@ -240,15 +238,15 @@
 
     <!-- Skills Section START -->
 
-    <section class="main">
+    <section class="main snap">
       <div class="skills" id="skills">
 
     <!-- Skillset description heading and paragraph START -->
       <div class="skills-text">
         <div class="skills-heading">
-          <h2 class="skills-heading__heading">What Skills Do I Have?</h2>
+          <h3 class="skills-heading__heading">What Skills Do I Have?</h3>
           <p class="skills-heading__description1">
-            From Development to IT - I'm hoping to be a jack of all trades!
+            From IT to Developer - I'm hoping to be a jack of all trades!
           </p>
           <p class="skills-heading__description2">
             Click icons to see my conservative 'guestimate' of my proficiency.
@@ -372,7 +370,7 @@
     <!-- Skills Section END -->
 
     <!-- Work Section START -->
-    <section class="main">
+    <section class="main snap">
       <div class="work" id="work">
         <!-- Work Section Heading START -->
         <div class="work-heading">
@@ -470,7 +468,7 @@
     <!-- Work Section END -->
 
     <!-- Contact Section START -->
-    <section class="main">
+    <section class="main snap">
       <div class="contact" id="contact">
         <div class="contact-heading">
           <h3 class="contact-heading__header">Want to Get in Touch?</h2>
@@ -531,14 +529,20 @@
   <div class="contact-method__welive">
     <div class="welive-heading">
       <h4 class="welive-heading__header">
-        The Live & Give Foundation
+        We Live & Give
       </h4>
       <div class="welive-img">
         <a href="https://weliveandgive.org/" target="_blank" title="The Live & Give Foundation"><img src="./assets/Logos/live&giveLogo.svg" alt="The Live and Give Foundation Logo" class="welive-logo"></a>
       </div>
       <div class="welive-para">
-        <p>We Live & Give is a non-profit that is focused on empowering the youth by providing mentoring, tutoring and training in the areas of Aviation, Media-Arts and Entrepeneurship.</p>
+        <p>We Live & Give is a non-profit that is 
+          focused on empowering the youth by 
+          providing mentoring, tutoring and training 
+          in Aviation, Media-Arts and Entrepeneurship.</p>
       </div>
+      <div class="contact-button__container">
+       <button><a href="https://www.weliveandgive.org/" title="We Live & Give Foundation" class="contact-buttons">Read More!</a></button>
+       </div>
     </div>
   </div>
 <!-- Non-Profit END -->
@@ -571,6 +575,63 @@
       </div>
 
 
+          <!-- SVG background image START -->
+      <div class="contact-wrapper__end">
+        <svg
+          viewBox="0 0 1920 412"
+          xmlns="http://www.w3.org/2000/svg"
+          id="footer-background"
+        >
+          <g filter="url(#filter0_d)">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M1917.38 398.169L1919.96 15.2677C1919.93 1.81568 1898.8 0.0179411 1875.92 0H41.4568C18.5735 0.0179125 0.030471 10.9185 0 24.3705V64.8865C7.15069 82.1592 35.575 97.1928 66.5638 101.442C108.151 107.139 151.24 99.1729 191.867 91.4048C232.469 83.6367 275.791 75.8991 317.196 82.0526C437.368 99.8583 451.102 214.309 570.73 233.272C640.792 244.376 709.662 216.121 766.328 189.466C822.994 162.826 891.632 134.465 961.797 145.355C1013.18 153.336 1048.26 180.19 1083.08 203.783C1117.91 227.377 1163.61 250.88 1216.55 248.153C1271.97 245.305 1312.29 214.735 1366.18 206.632C1437.05 196 1507.11 227.149 1548.95 262.41C1590.77 297.671 1618.58 339.467 1672.83 368.27C1737.63 402.678 1832.36 411.284 1917.38 398.169V398.169Z"
+              />
+              <!-- <path d="M1920 0.0467529H1752.25V88.0401H1920V0.0467529Z" /> -->
+              <!-- <rect width="100" height="26" /> -->
+            </g>
+          </g>
+          <defs>
+            <filter
+              id="filter0_d"
+              x="-4"
+              y="0"
+              width="1928"
+              height="412"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              />
+              <feOffset dy="4" />
+              <feGaussianBlur stdDeviation="2" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow"
+                result="shape"
+              />
+            </filter>
+            <clipPath id="clip0">
+              <rect width="1920" height="404" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <!-- SVG background image END -->
 </section>
     <!-- Contact Section END -->
 
@@ -583,13 +644,19 @@
           <p> I'm open to discussing with all persons about any opportunities!</p>
         <!-- Contact Final Sentence END -->
         
-        <ul class="footer-list">
+        <ul class="footer-list" id="footer-list">
           <li class="footer-list__items madeby">Made By: &#169; Frank Walker 2020</li>
           <li class="footer-list__items flag"> | From: Nassau, Bahamas <img src="./assets/icons/flags/bahamas.svg" alt="bahamas-flag" class="bahamas-flag"> |</li>
           <li class="footer-list__items">Reach Out to Me! &#127881;</li>
         </ul>
       </footer>
+</div>
+    <!-- Footer Section END -->
 
-    <!-- Footer Section START -->
+    <!-- Return to top button START -->
+      <div class="return-top" id="return-top">
+        
+      </div>
+    <!-- Return to top button END -->
   </body>
 </html>
