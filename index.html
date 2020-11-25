@@ -43,7 +43,8 @@
       CND Imports END 
     
     /////////////////////////////////////////////////////-->
-    <script src="./scripts/snap.js"></script>
+
+     
   </head>
   <body id="body">
     <div class="portfolio-snap">
@@ -80,16 +81,16 @@
           <!-- Navigation END -->
 
           <!-- Langugage Toggle Switch START -->
-          <span class="toggle language"
-            ><img
-              src="./assets/icons/language/france.svg"
-              id="French"
-              alt="French Language"
-          /></span>
+          <span class="language">
+          
+            <a href="#en" id="en" data-reload>en</a>
+            <div class="line-between"></div>
+            <a href="#fr" id="fr" data-reload>fr</a>
+          </span>
           <!-- Language Toggle Switch END -->
 
           <!-- Nightmode Toggle Switch START -->
-          <span class="toggle night">
+          <span class="toggle night" id="toggle">
             <!-- <i class="las la-toggle-on"></i> -->
             <i class="las la-toggle-off"></i>
           </span>
@@ -158,11 +159,11 @@
         </svg>
       </div>
       <!-- SVG background image END -->
-      <aside class="home">
+      <aside class="home" id="home">
         <!-- Brief description of myself START -->
         <div class="home-section">
           <aside class="action" id="action">
-            <h2>
+            <h2 id="welcoming">
               Hey there
               <div class="hello-animate"></div>
               My name is
@@ -188,7 +189,7 @@
           <a href="#"><i class="lab la-whatsapp" title="WhatsApp"></i></a>
         </div>
         <div class="socials-email" id="socials-email">
-         <a href="mailto:fwalker94@icloud.com" class="socials-email__send" id="socials-email__send">Send Me A Email!</a>
+         <a href="mailto:hello@froshtech.dev" class="socials-email__send" id="socials-email__send">Send Me A Email!</a>
         </div>
         <!-- Social Media END -->
       </section>
@@ -541,7 +542,7 @@
           in Aviation, Media-Arts and Entrepeneurship.</p>
       </div>
       <div class="contact-button__container">
-       <button><a href="https://www.weliveandgive.org/" title="We Live & Give Foundation" class="contact-buttons">Read More!</a></button>
+       <button><a href="https://www.weliveandgive.org/" title="We Live & Give Foundation" class="contact-buttons" target="_blank">Read More!</a></button>
        </div>
     </div>
   </div>
@@ -649,14 +650,17 @@
           <li class="footer-list__items flag"> | From: Nassau, Bahamas <img src="./assets/icons/flags/bahamas.svg" alt="bahamas-flag" class="bahamas-flag"> |</li>
           <li class="footer-list__items">Reach Out to Me! &#127881;</li>
         </ul>
+           <!-- Return to top button START -->
+        <div class="top-button" id="top-button">
+          <a href="#inner"><img src="./assets/icons/Scroll/scroll-up.svg" class="top-button__img" id="top-button__img" alt="Back to The Top!" title="Back to The Top!"></a>
+        </div>
+      
+    <!-- Return to top button END -->
       </footer>
 </div>
     <!-- Footer Section END -->
 
-    <!-- Return to top button START -->
-      <div class="return-top" id="return-top">
-        
-      </div>
-    <!-- Return to top button END -->
+
+    <script src="./scripts/language.js"></script>
   </body>
 </html>

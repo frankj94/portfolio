@@ -1,12 +1,13 @@
 .work {
   position: absolute;
-  top: 210%;
+  top: 200%;
 }
 
 // Work Heading START
 .work-heading {
   margin: 1rem 1rem 5rem 1rem;
   background-color: #b29e9727;
+  box-shadow: 5px 4px #b29e976c;
   border-radius: 25px;
   width: 96%;
   height: auto;
@@ -64,6 +65,7 @@
 #card-header {
   background-color: #b29e9727;
   border-radius: 15px;
+  box-shadow: 5px 4px #b29e976c;
 
   &:hover {
     transition: 1s ease;
@@ -74,6 +76,7 @@
 #card-body {
   background-color: #b29e9727;
   border-radius: 15px;
+  box-shadow: 5px 4px #b29e976c;
 
   &:hover {
     transition: 1s ease;

@@ -1,6 +1,6 @@
 .skills {
   position: absolute;
-  top: 105%;
+  top: 100%;
 }
 
 .skills-text {
@@ -11,6 +11,7 @@
   padding: 1rem;
   width: 96%;
   height: 5%;
+  box-shadow: 5px 4px #b29e976c;
 
   &:hover {
     transition: 1s ease;
@@ -71,6 +72,7 @@
   width: 40rem;
   height: 4rem;
   background-color: #b29e9727;
+  box-shadow: 5px 4px #b29e976c;
   margin-bottom: 1.5rem;
   border-radius: 25px;
   display: flex;

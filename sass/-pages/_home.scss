@@ -6,12 +6,13 @@
 
   .home-section {
     position: absolute;
-    top: 20%;
+    top: 35%;
     left: 4%;
-    width: 40vw;
+    width: 50vw;
     border-radius: 15px;
     padding: 1rem;
     background-color: #b29e9727;
+    box-shadow: 5px 4px #b29e976c;
 
     &:hover {
       transition: 1s ease;
@@ -23,12 +24,12 @@
     text-align: center;
 
     padding-bottom: 1rem;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     font-weight: 500;
   }
   p {
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 // Heading END
@@ -37,8 +38,8 @@
 .socials {
   position: absolute;
   z-index: 15;
-  left: 4%;
-  top: 80%;
+  left: 9%;
+  top: 82%;
   font-size: 3rem;
   text-align: center;
   width: 40vw;
@@ -48,6 +49,7 @@
   align-items: center;
   justify-content: center;
   background-color: #b29e9727;
+  box-shadow: 5px 4px #b29e976c;
 
   &:hover {
     transition: 1s ease;
@@ -91,6 +93,7 @@
   height: 25rem;
   background-color: #b29e9727;
   border-radius: 15px;
+  box-shadow: 5px 4px #b29e976c;
 
   &:hover {
     background-color: rgba(128, 128, 128, 0.308);

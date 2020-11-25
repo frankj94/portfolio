@@ -5,12 +5,13 @@
 // Abnstracts END
 
 // Base START
-@import "./-base/_reset.scss";
-@import "./-base/_typography.scss";
+@import "./-base/_reset";
+@import "./-base/_typography";
 // Base END
 
 // Components START
 @import "./-components/button";
+@import "./-components/scroll";
 @import "./-components/toggle";
 @import "./-components/hello";
 @import "./-components/language";

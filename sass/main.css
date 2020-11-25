@@ -56,6 +56,21 @@ body {
   cursor: pointer;
 }
 
+.top-button {
+  width: 5%;
+  height: auto;
+  position: fixed;
+  top: 88%;
+  left: 92%;
+  z-index: 30;
+}
+
+.top-button__img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
 .toggle {
   width: 2rem;
   height: 2rem;
@@ -98,7 +113,7 @@ body {
 
 .toolbelt-link {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   color: black;
@@ -106,6 +121,43 @@ body {
 
 .toolbelt-link:hover {
   color: #a8d4d2;
+}
+
+.language {
+  margin: 1rem;
+  width: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.line-between {
+  border: 1px solid black;
+  height: 2rem;
+}
+
+#en {
+  text-decoration: none;
+  color: black;
+}
+
+#en:hover {
+  color: blue;
+}
+
+#fr {
+  text-decoration: none;
+  color: black;
+}
+
+#fr:hover {
+  color: red;
 }
 
 .global-header {
@@ -171,7 +223,7 @@ footer {
 
 .footer-container p {
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2rem;
 }
 
 .footer-list {
@@ -285,11 +337,11 @@ footer {
 html,
 body {
   height: 100vh;
-  overflow-x: hidden;
 }
 
 .portfolio-snap {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 100vh;
   -ms-scroll-snap-points-y: repeat(100vh);
       scroll-snap-points-y: repeat(100vh);
@@ -313,7 +365,7 @@ body {
 
 .skills {
   position: absolute;
-  top: 105%;
+  top: 100%;
 }
 
 .skills-text {
@@ -326,6 +378,8 @@ body {
   padding: 1rem;
   width: 96%;
   height: 5%;
+  -webkit-box-shadow: 5px 4px #b29e976c;
+          box-shadow: 5px 4px #b29e976c;
 }
 
 .skills-text:hover {
@@ -401,6 +455,8 @@ body {
   width: 40rem;
   height: 4rem;
   background-color: #b29e9727;
+  -webkit-box-shadow: 5px 4px #b29e976c;
+          box-shadow: 5px 4px #b29e976c;
   margin-bottom: 1.5rem;
   border-radius: 25px;
   display: -webkit-box;
@@ -516,12 +572,14 @@ body {
 .contact {
   position: absolute;
   z-index: 10;
-  top: 310%;
+  top: 300%;
 }
 
 .contact-heading {
   margin: 1rem 1rem 1rem 1rem;
   background-color: #b29e9727;
+  -webkit-box-shadow: 5px 4px #b29e976c;
+          box-shadow: 5px 4px #b29e976c;
   border-radius: 25px;
   width: 96%;
   height: auto;
@@ -577,6 +635,8 @@ body {
   width: 25%;
   height: 65vh;
   background-color: #b29e9727;
+  -webkit-box-shadow: 5px 4px #b29e976c;
+          box-shadow: 5px 4px #b29e976c;
   border-radius: 15px;
 }
 
@@ -645,6 +705,8 @@ body {
 .contact-method__blog {
   width: 25%;
   background-color: #b29e9727;
+  -webkit-box-shadow: 5px 4px #b29e976c;
+          box-shadow: 5px 4px #b29e976c;
   border-radius: 15px;
   height: 65vh;
 }
@@ -691,6 +753,8 @@ body {
   width: 25%;
   height: 65vh;
   background-color: #b29e9727;
+  -webkit-box-shadow: 5px 4px #b29e976c;
+          box-shadow: 5px 4px #b29e976c;
   border-radius: 15px;
   text-align: center;
 }
@@ -736,6 +800,8 @@ body {
   width: 25%;
   height: 65vh;
   background-color: #b29e9727;
+  -webkit-box-shadow: 5px 4px #b29e976c;
+          box-shadow: 5px 4px #b29e976c;
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,12 +880,14 @@ body {
 
 .home .home-section {
   position: absolute;
-  top: 20%;
+  top: 35%;
   left: 4%;
-  width: 40vw;
+  width: 50vw;
   border-radius: 15px;
   padding: 1rem;
   background-color: #b29e9727;
+  -webkit-box-shadow: 5px 4px #b29e976c;
+          box-shadow: 5px 4px #b29e976c;
 }
 
 .home .home-section:hover {
@@ -831,20 +899,20 @@ body {
 .home h2 {
   text-align: center;
   padding-bottom: 1rem;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
 .home p {
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .socials {
   position: absolute;
   z-index: 15;
-  left: 4%;
-  top: 80%;
+  left: 9%;
+  top: 82%;
   font-size: 3rem;
   text-align: center;
   width: 40vw;
@@ -860,6 +928,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #b29e9727;
+  -webkit-box-shadow: 5px 4px #b29e976c;
+          box-shadow: 5px 4px #b29e976c;
 }
 
 .socials:hover {
@@ -910,6 +980,8 @@ body {
   height: 25rem;
   background-color: #b29e9727;
   border-radius: 15px;
+  -webkit-box-shadow: 5px 4px #b29e976c;
+          box-shadow: 5px 4px #b29e976c;
 }
 
 .frosh:hover {
@@ -1006,12 +1078,14 @@ body {
 
 .work {
   position: absolute;
-  top: 210%;
+  top: 200%;
 }
 
 .work-heading {
   margin: 1rem 1rem 5rem 1rem;
   background-color: #b29e9727;
+  -webkit-box-shadow: 5px 4px #b29e976c;
+          box-shadow: 5px 4px #b29e976c;
   border-radius: 25px;
   width: 96%;
   height: auto;
@@ -1072,6 +1146,8 @@ body {
 #card-header {
   background-color: #b29e9727;
   border-radius: 15px;
+  -webkit-box-shadow: 5px 4px #b29e976c;
+          box-shadow: 5px 4px #b29e976c;
 }
 
 #card-header:hover {
@@ -1083,6 +1159,8 @@ body {
 #card-body {
   background-color: #b29e9727;
   border-radius: 15px;
+  -webkit-box-shadow: 5px 4px #b29e976c;
+          box-shadow: 5px 4px #b29e976c;
 }
 
 #card-body:hover {

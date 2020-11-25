@@ -1,12 +1,13 @@
 .contact {
   position: absolute;
   z-index: 10;
-  top: 310%;
+  top: 300%;
 }
 
 .contact-heading {
   margin: 1rem 1rem 1rem 1rem;
   background-color: #b29e9727;
+  box-shadow: 5px 4px #b29e976c;
   border-radius: 25px;
   width: 96%;
   height: auto;
@@ -53,6 +54,7 @@
   width: 25%;
   height: 65vh;
   background-color: #b29e9727;
+  box-shadow: 5px 4px #b29e976c;
   border-radius: 15px;
 
   .contact-form {
@@ -113,6 +115,7 @@
 .contact-method__blog {
   width: 25%;
   background-color: #b29e9727;
+  box-shadow: 5px 4px #b29e976c;
   border-radius: 15px;
   height: 65vh;
 
@@ -160,6 +163,7 @@
   width: 25%;
   height: 65vh;
   background-color: #b29e9727;
+  box-shadow: 5px 4px #b29e976c;
   border-radius: 15px;
   text-align: center;
 
@@ -207,6 +211,7 @@
   width: 25%;
   height: 65vh;
   background-color: #b29e9727;
+  box-shadow: 5px 4px #b29e976c;
   border-radius: 15px;
   display: flex;
   padding-top: 1rem;
