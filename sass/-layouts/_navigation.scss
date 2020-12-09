@@ -1,8 +1,10 @@
 .header-navigation__list {
   list-style: none;
   display: flex;
-  align-items: end;
-  margin-left: 30rem;
+  position: absolute;
+  left: 75%;
+  top: 35%;
+
   // List Items
   li {
     padding: 0rem 1rem 0rem 0.5rem;
@@ -23,15 +25,15 @@
   // background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
-  height: 2px;
-  left: 66.5%;
+  height: 5%;
+  left: 0%;
   position: absolute;
   background: #fff;
   transition: width 0.4s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
 .nav-list__slide1:hover:after {
-  width: 5.5%;
+  width: 30%;
   // left: 0;
 }
 
@@ -44,15 +46,15 @@
   // background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
-  height: 2px;
-  left: 73%;
+  height: 5%;
+  left: 30%;
   position: absolute;
   background: #fff;
   transition: width 0.4s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
 .nav-list__slide2:hover:after {
-  width: 5.5%;
+  width: 30%;
   // left: 0;
 }
 
@@ -65,15 +67,15 @@
   // background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
-  height: 2px;
-  left: 79%;
+  height: 5%;
+  left: 57%;
   position: absolute;
   background: #fff;
   transition: width 0.4s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
 .nav-list__slide3:hover:after {
-  width: 7.8%;
+  width: 43%;
   // left: 0;
 }
 // Slider below Nav bar highlighting topics END

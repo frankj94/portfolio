@@ -87,6 +87,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  left: 95%;
+  top: 35%;
 }
 
 .la-toggle-off {
@@ -135,11 +138,16 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: absolute;
+  left: 90%;
+  top: 25%;
 }
 
 .line-between {
   border: 1px solid black;
+  background-color: black;
   height: 2rem;
+  margin: 0rem 1rem 0rem 1rem;
 }
 
 #en {
@@ -149,6 +157,7 @@ body {
 
 #en:hover {
   color: blue;
+  font-size: 1.5rem;
 }
 
 #fr {
@@ -158,6 +167,7 @@ body {
 
 #fr:hover {
   color: red;
+  font-size: 1.5rem;
 }
 
 .global-header {
@@ -202,9 +212,8 @@ body {
 #main-background {
   fill: #a8d4d2;
   position: absolute;
-  width: 100vw;
-  height: 40vh;
   top: 10%;
+  right: 0%;
   z-index: 0;
 }
 
@@ -253,10 +262,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  margin-left: 30rem;
+  position: absolute;
+  left: 75%;
+  top: 35%;
 }
 
 .header-navigation__list li {
@@ -277,8 +285,8 @@ footer {
 .nav-list__slide1:after {
   bottom: 0;
   content: "";
-  height: 2px;
-  left: 66.5%;
+  height: 5%;
+  left: 0%;
   position: absolute;
   background: #fff;
   -webkit-transition: width 0.4s ease 0s, left 0.3s ease 0s;
@@ -287,7 +295,7 @@ footer {
 }
 
 .nav-list__slide1:hover:after {
-  width: 5.5%;
+  width: 30%;
 }
 
 .nav-list__slide2 {
@@ -299,8 +307,8 @@ footer {
 .nav-list__slide2:after {
   bottom: 0;
   content: "";
-  height: 2px;
-  left: 73%;
+  height: 5%;
+  left: 30%;
   position: absolute;
   background: #fff;
   -webkit-transition: width 0.4s ease 0s, left 0.3s ease 0s;
@@ -309,7 +317,7 @@ footer {
 }
 
 .nav-list__slide2:hover:after {
-  width: 5.5%;
+  width: 30%;
 }
 
 .nav-list__slide3 {
@@ -321,8 +329,8 @@ footer {
 .nav-list__slide3:after {
   bottom: 0;
   content: "";
-  height: 2px;
-  left: 79%;
+  height: 5%;
+  left: 57%;
   position: absolute;
   background: #fff;
   -webkit-transition: width 0.4s ease 0s, left 0.3s ease 0s;
@@ -331,7 +339,7 @@ footer {
 }
 
 .nav-list__slide3:hover:after {
-  width: 7.8%;
+  width: 43%;
 }
 
 html,
@@ -366,18 +374,30 @@ body {
 .skills {
   position: absolute;
   top: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .skills-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #b29e9727;
   border-radius: 25px;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 7rem;
   padding: 1rem;
-  width: 96%;
-  height: 5%;
+  width: 90vw;
+  height: 20vh;
   -webkit-box-shadow: 5px 4px #b29e976c;
           box-shadow: 5px 4px #b29e976c;
 }
@@ -386,6 +406,10 @@ body {
   -webkit-transition: 1s ease;
   transition: 1s ease;
   background-color: rgba(128, 128, 128, 0.308);
+}
+
+.skills-text P {
+  text-align: center;
 }
 
 .skills-heading {
@@ -399,7 +423,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
   margin-bottom: 0.5rem;
   margin-right: 1rem;
   margin-left: 1rem;
@@ -411,7 +434,7 @@ body {
   text-align: center;
   text-decoration: underline;
   padding-bottom: 1rem;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -425,17 +448,19 @@ body {
   font-style: italic;
 }
 
-.skills-img {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+.skills-container-resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.receipts {
+.skills-container-resume .receipts {
   width: 20%;
   height: auto;
+  margin: 5%;
 }
 
-.skills-resume {
+.skills-container-resume .skills-resume {
   width: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,20 +469,21 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   font-size: 1rem;
-}
-
-.skills-resume a {
   text-decoration: none;
   color: black;
 }
 
+.skills-container-resume .skills-resume:hover {
+  text-decoration: underline;
+}
+
 .skills-icons {
-  width: 40rem;
-  height: 4rem;
+  width: 50%;
+  height: 25%;
   background-color: #b29e9727;
   -webkit-box-shadow: 5px 4px #b29e976c;
           box-shadow: 5px 4px #b29e976c;
-  margin-bottom: 1.5rem;
+  margin-bottom: 5%;
   border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,7 +494,7 @@ body {
 
 .skills-icons i {
   padding-top: 1rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: gray;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -487,10 +513,13 @@ body {
 
 .skills-list {
   text-align: center;
+  width: 100%;
+  height: auto;
 }
 
 .skills-list__1 {
-  margin-top: 2rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
 }
 
 .skills-list__1 .html:hover {
@@ -513,6 +542,10 @@ body {
   text-shadow: 0 0 4px #6fa660;
 }
 
+.skills-list__2 {
+  margin-left: 15rem;
+}
+
 .skills-list__2 .bootstrap:hover {
   text-shadow: 0 0 4px #533b78;
 }
@@ -533,6 +566,10 @@ body {
   text-shadow: 0 0 4px #fde25e;
 }
 
+.skills-list__3 {
+  margin-left: 25rem;
+}
+
 .skills-list__3 .npm:hover {
   text-shadow: 0 0 4px #cb3837;
 }
@@ -551,6 +588,10 @@ body {
 
 .skills-list__3 .microsoft:hover {
   text-shadow: 0 0 4px #01a4ef;
+}
+
+.skills-list__4 {
+  margin-left: 35rem;
 }
 
 .skills-list__4 .docker:hover {
@@ -576,13 +617,13 @@ body {
 }
 
 .contact-heading {
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 6rem;
   background-color: #b29e9727;
   -webkit-box-shadow: 5px 4px #b29e976c;
           box-shadow: 5px 4px #b29e976c;
   border-radius: 25px;
-  width: 96%;
-  height: auto;
+  width: 90vw;
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,7 +642,7 @@ body {
 .contact-heading h3 {
   padding: 0.5rem;
   margin: 0.9rem;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 500;
   text-decoration: underline;
 }
@@ -638,6 +679,11 @@ body {
   -webkit-box-shadow: 5px 4px #b29e976c;
           box-shadow: 5px 4px #b29e976c;
   border-radius: 15px;
+}
+
+.contact-method__form h4 {
+  text-align: center;
+  text-decoration: underline;
 }
 
 .contact-method__form .contact-form {
@@ -697,8 +743,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1px;
-  text-align: center;
   margin-top: 2rem;
 }
 
@@ -714,6 +765,7 @@ body {
 .contact-method__blog h4 {
   text-align: center;
   margin-bottom: 1rem;
+  text-decoration: underline;
 }
 
 .contact-method__blog .blog__heading {
@@ -767,6 +819,7 @@ body {
 
 .contact-method__welive h4 {
   text-align: center;
+  text-decoration: underline;
 }
 
 .contact-method__welive .welive-para {
@@ -806,9 +859,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 1rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.contact-method__socials h4 {
+  text-align: center;
+  text-decoration: underline;
 }
 
 .contact-method__socials:hover {
@@ -830,7 +891,7 @@ body {
 
 .links-socials a {
   color: black;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .links-gaming {
@@ -846,7 +907,7 @@ body {
 
 .links-gaming a {
   color: black;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .links-gaming .la-gamepad:hover {
@@ -860,8 +921,6 @@ body {
 #footer-background {
   fill: #a8d4d2;
   position: absolute;
-  width: 100vw;
-  height: 40vh;
   top: 395%;
   z-index: 0;
   -webkit-transform: rotate(180deg);
@@ -880,11 +939,11 @@ body {
 
 .home .home-section {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 4%;
   width: 50vw;
   border-radius: 15px;
-  padding: 1rem;
+  padding: 5rem;
   background-color: #b29e9727;
   -webkit-box-shadow: 5px 4px #b29e976c;
           box-shadow: 5px 4px #b29e976c;
@@ -904,7 +963,7 @@ body {
 }
 
 .home p {
-  text-align: left;
+  text-align: center;
   font-size: 1.1rem;
 }
 
@@ -912,8 +971,8 @@ body {
   position: absolute;
   z-index: 15;
   left: 9%;
-  top: 82%;
-  font-size: 3rem;
+  top: 75%;
+  font-size: 5rem;
   text-align: center;
   width: 40vw;
   height: 10vh;
@@ -974,8 +1033,8 @@ body {
 
 .frosh {
   position: absolute;
-  right: 4%;
-  top: 30%;
+  right: 20%;
+  top: 50%;
   width: 27rem;
   height: 25rem;
   background-color: #b29e9727;
@@ -1066,8 +1125,8 @@ body {
 
 #socials-email {
   position: absolute;
-  top: 75%;
-  left: 35%;
+  top: 70%;
+  left: 45%;
   margin: 0%;
 }
 
@@ -1082,13 +1141,13 @@ body {
 }
 
 .work-heading {
-  margin: 1rem 1rem 5rem 1rem;
+  margin: 1rem 1rem 5rem 7rem;
   background-color: #b29e9727;
   -webkit-box-shadow: 5px 4px #b29e976c;
           box-shadow: 5px 4px #b29e976c;
   border-radius: 25px;
-  width: 96%;
-  height: auto;
+  width: 90vw;
+  height: 15vh;
 }
 
 .work-heading:hover {
@@ -1100,7 +1159,7 @@ body {
 .work-heading h3 {
   padding: 1rem;
   margin-top: 1.5rem;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 500;
   text-align: center;
   text-decoration: underline;
@@ -1109,6 +1168,8 @@ body {
 .work-heading p {
   font-size: 0.8rem;
   text-align: center;
+  margin-bottom: 2%;
+  font-style: italic;
 }
 
 .work-list {
@@ -1134,7 +1195,7 @@ body {
 
 #card-deck {
   width: 90%;
-  margin-left: 3rem;
+  margin-left: 8rem;
 }
 
 .card-header:hover {

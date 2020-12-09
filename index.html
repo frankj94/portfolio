@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
       <!-- Bootstrap END -->
 
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
@@ -52,6 +52,9 @@
       <section class="main snap">
       <!-- Header Wrapper START -->
       <header class="global-header">
+        <div class="under-construction" style="background-color: crimson; text-align: center; color: ghostwhite; font-weight: bolder;">
+          <p class="under-construction__text">Under Construction</p>
+        </div>
         <nav class="header-navigation">
           <!-- Home logo START -->
           <a href="https://www.frankwalker.me" class="header-navigation__button" title="Homepage">
@@ -109,53 +112,13 @@
           xmlns="http://www.w3.org/2000/svg"
           id="main-background"
         >
-          <g filter="url(#filter0_d)">
-            <g clip-path="url(#clip0)">
+          <g>
+            <g>
               <path
                 d="M1917.38 398.169L1919.96 15.2677C1919.93 1.81568 1898.8 0.0179411 1875.92 0H41.4568C18.5735 0.0179125 0.030471 10.9185 0 24.3705V64.8865C7.15069 82.1592 35.575 97.1928 66.5638 101.442C108.151 107.139 151.24 99.1729 191.867 91.4048C232.469 83.6367 275.791 75.8991 317.196 82.0526C437.368 99.8583 451.102 214.309 570.73 233.272C640.792 244.376 709.662 216.121 766.328 189.466C822.994 162.826 891.632 134.465 961.797 145.355C1013.18 153.336 1048.26 180.19 1083.08 203.783C1117.91 227.377 1163.61 250.88 1216.55 248.153C1271.97 245.305 1312.29 214.735 1366.18 206.632C1437.05 196 1507.11 227.149 1548.95 262.41C1590.77 297.671 1618.58 339.467 1672.83 368.27C1737.63 402.678 1832.36 411.284 1917.38 398.169V398.169Z"
               />
-              <!-- <path d="M1920 0.0467529H1752.25V88.0401H1920V0.0467529Z" /> -->
-              <!-- <rect width="100" height="26" /> -->
             </g>
           </g>
-          <defs>
-            <filter
-              id="filter0_d"
-              x="-4"
-              y="0"
-              width="1928"
-              height="412"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix
-                in="SourceAlpha"
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              />
-              <feOffset dy="4" />
-              <feGaussianBlur stdDeviation="2" />
-              <feColorMatrix
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-              />
-              <feBlend
-                mode="normal"
-                in2="BackgroundImageFix"
-                result="effect1_dropShadow"
-              />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="effect1_dropShadow"
-                result="shape"
-              />
-            </filter>
-            <clipPath id="clip0">
-              <rect width="1920" height="404" />
-            </clipPath>
-          </defs>
         </svg>
       </div>
       <!-- SVG background image END -->
@@ -163,11 +126,11 @@
         <!-- Brief description of myself START -->
         <div class="home-section">
           <aside class="action" id="action">
-            <h2 id="welcoming">
+            <h2>
               Hey there
               <div class="hello-animate"></div>
               My name is
-              <em style="font-weight: bolder">Frank!</em>
+              Frank!
             </h2>
             <p>
               I'm a Software Developer who also has a fair bit of IT experience; I can build your WebApp, Website,  or set up the Physical Infrastructure! Reach out to me if you want to work together! You can also see my full toolbelt <a href="#skills" class="toolbelt-link">below</a>
@@ -240,27 +203,29 @@
     <!-- Skills Section START -->
 
     <section class="main snap">
-      <div class="skills" id="skills">
+      <div class="skills" id="skills" >
 
     <!-- Skillset description heading and paragraph START -->
-      <div class="skills-text">
+      <div class="skills-text" data-aos="fade-down">
         <div class="skills-heading">
           <h3 class="skills-heading__heading">What Skills Do I Have?</h3>
           <p class="skills-heading__description1">
             From IT to Developer - I'm hoping to be a jack of all trades!
           </p>
           <p class="skills-heading__description2">
-            Click icons to see my conservative 'guestimate' of my proficiency.
+            Tip: Click icons to see my conservative 'guestimate' of my proficiency.
           </p>
         </div>
-        <div class="skills-img"><img src="./assets/backgrounds/receipts.svg" alt="Receipts" class="receipts"></div>
-        <div class="skills-resume"><a href="https://drive.google.com/file/d/12832mRCCJsfT-qo7jUQg2189N8fbj-TD/view?usp=sharing" target="_blank" title="Google Drive Link"><p>Link to My Resume.</p></a></div>
+        <div class="skills-container-resume">
+        <img src="./assets/backgrounds/receipts.svg" alt="Receipts" class="receipts">
+        <a href="https://drive.google.com/file/d/12832mRCCJsfT-qo7jUQg2189N8fbj-TD/view?usp=sharing" target="_blank" title="Google Drive Link" class="skills-resume">Link to My Resume.</a>
+        </div>
       </div>
     <!-- Skillset description heading and paragraph END -->
 
     <!-- Skillset image container one START -->
         <div class="skills-list">
-          <div class="skills-list__1 skills-icons" id="skills1">
+          <div class="skills-list__1 skills-icons" id="skills1" data-aos="fade-right">
             <!-- HTML Skills START -->
             <i class="fab fa-html5 html" id="html" title="HTML5"><div id="htmlJS"></div></i>
             <!-- HTML Skills END -->
@@ -286,7 +251,7 @@
 
     <!-- Skillset image container two  START -->
 
-          <div class="skills-list__2 skills-icons">
+          <div class="skills-list__2 skills-icons" data-aos="fade-right">
 
             <!-- Boostrap Skills START -->
             <i class="fab fa-bootstrap bootstrap" title="Bootstrap" id="bootstrap"><div id="bootstrapJS"></div></i>
@@ -313,7 +278,7 @@
 
     <!-- Skillset image container three START -->
 
-          <div class="skills-list__3 skills-icons">
+          <div class="skills-list__3 skills-icons" data-aos="fade-right">
 
             <!-- NPM Skills START -->
             <i class="fab fa-npm npm" title="NPM" id="npm"><div id="npmJS"></div></i>
@@ -340,7 +305,7 @@
 
     <!-- Skillset image container four START -->
 
-          <div class="skills-list__4 skills-icons">
+          <div class="skills-list__4 skills-icons" data-aos="fade-right">
 
             <!-- Docker Skills START -->
             <i class="fab fa-docker docker" title="Docker" id="docker"><div id="dockerJS"></div></i>
@@ -377,14 +342,14 @@
         <div class="work-heading">
           <h3 class="work-heading__heading">Here are Some of My Projects</h3>
           <div class="work-heading__img">
-            <p class="work-heading__more">Visit My Pages to See More!</p>
+            <p class="work-heading__more">Tip: Visit My Pages to See More!</p>
             <!-- Guy riding a bike animated -->
           </div>
           <div class="work-heading__list">
             <ul class="work-list">
               <li class="work-links"><a href="#" target="_blank" title="My Blog">My Blog</a></li>
               <li class="work-links"><a href="#" target="_blank" title="My Github Page">My Github</a></li>
-              <li class="work-links"><a href="#" target="_blank" title="My IT Projects">My Flickr (IT Related Projects)</a></li>
+              <li class="work-links"><a href="#" target="_blank" title="My IT Projects">IT Related Projects</a></li>
             </ul>
           </div>
         </div>
@@ -392,10 +357,10 @@
 
         <!-- Bootstrap Card One START -->
         
-          <div class="card-deck" id="card-deck">
+          <div class="card-deck" id="card-deck" data-aos="fade-up">
             <div class="card text-black text-center bg-light border-light">
               <div class="card-header" id="card-header">
-                HTML, CSS, JavaScript
+                NodeJS, AWS
               </div>
               <img src="" class="card-img-top" alt="First Project">
               <div class="card-body" id="card-body">
@@ -427,7 +392,7 @@
     
             <div class="card text-black text-center bg-light border-light" id="card">
                 <div class="card-header" id="card-header">
-                VueJS
+                VueJS, MongoDB
                </div>
               <img src="" class="card-img-top" alt="Second Project">
               <div class="card-body" id="card-body">
@@ -443,7 +408,7 @@
     
             <div class="card text-black text-center bg-light border-light">
                 <div class="card-header" id="card-header">
-                Python, MongoDB
+                Python, SQL
                </div>
               <img src="" class="card-img-top" alt="Second Project">
               <div class="card-body" id="card-body">
@@ -481,7 +446,7 @@
 <div class="contact-method">
 
   <!-- Email Contact Form START -->
-  <div class="contact-method__form">
+  <div class="contact-method__form" data-aos="fade-right">
     <div class="contact-form__heading">
       <h4>Send Me an Email!</h4>
       <i class="far fa-paper-plane"></i>
@@ -497,17 +462,18 @@
       </div>
       <div class="comment-container">
         <label for="comment">Leave a Comment:</label>
-      <textarea name="textarea" id="comment-text" cols="30" rows="3" placeholder="Leave A Comment..."></textarea>
+      <textarea name="textarea" id="comment-text" cols="30" rows="3" placeholder="Leave A Comment..." type="text"></textarea>
       </div>
       <div class="comment-submit">
         <input type="submit" value="Send!" title="Sends Me A Email!">
       </div>
     </form>
   </div>
+
   <!-- Email Contact Form END -->
 
   <!-- Blog Contact START -->
-  <div class="contact-method__blog">
+  <div class="contact-method__blog" data-aos="fade-right">
     <div class="contact-blog__heading">
       <div class="blog-heading">
         <h4 class="blog-heading__header">
@@ -527,7 +493,7 @@
   <!-- Blog Contact END -->
 
   <!-- Non-Profit START -->
-  <div class="contact-method__welive">
+  <div class="contact-method__welive" data-aos="fade-left">
     <div class="welive-heading">
       <h4 class="welive-heading__header">
         We Live & Give
@@ -550,7 +516,7 @@
 
 
 <!-- Social Media Contact START -->
-  <div class="contact-method__socials">
+  <div class="contact-method__socials" data-aos="fade-left">
     <div class="links-socials">
       <h4 class="link-socials__heading">Socials</h4>
       <a href="#"><i class="lab la-facebook" title="Facebook"></i></a>
@@ -578,58 +544,19 @@
 
           <!-- SVG background image START -->
       <div class="contact-wrapper__end">
+
         <svg
           viewBox="0 0 1920 412"
           xmlns="http://www.w3.org/2000/svg"
           id="footer-background"
         >
-          <g filter="url(#filter0_d)">
-            <g clip-path="url(#clip0)">
+          <g>
+            <g>
               <path
                 d="M1917.38 398.169L1919.96 15.2677C1919.93 1.81568 1898.8 0.0179411 1875.92 0H41.4568C18.5735 0.0179125 0.030471 10.9185 0 24.3705V64.8865C7.15069 82.1592 35.575 97.1928 66.5638 101.442C108.151 107.139 151.24 99.1729 191.867 91.4048C232.469 83.6367 275.791 75.8991 317.196 82.0526C437.368 99.8583 451.102 214.309 570.73 233.272C640.792 244.376 709.662 216.121 766.328 189.466C822.994 162.826 891.632 134.465 961.797 145.355C1013.18 153.336 1048.26 180.19 1083.08 203.783C1117.91 227.377 1163.61 250.88 1216.55 248.153C1271.97 245.305 1312.29 214.735 1366.18 206.632C1437.05 196 1507.11 227.149 1548.95 262.41C1590.77 297.671 1618.58 339.467 1672.83 368.27C1737.63 402.678 1832.36 411.284 1917.38 398.169V398.169Z"
               />
-              <!-- <path d="M1920 0.0467529H1752.25V88.0401H1920V0.0467529Z" /> -->
-              <!-- <rect width="100" height="26" /> -->
             </g>
           </g>
-          <defs>
-            <filter
-              id="filter0_d"
-              x="-4"
-              y="0"
-              width="1928"
-              height="412"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix
-                in="SourceAlpha"
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              />
-              <feOffset dy="4" />
-              <feGaussianBlur stdDeviation="2" />
-              <feColorMatrix
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-              />
-              <feBlend
-                mode="normal"
-                in2="BackgroundImageFix"
-                result="effect1_dropShadow"
-              />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="effect1_dropShadow"
-                result="shape"
-              />
-            </filter>
-            <clipPath id="clip0">
-              <rect width="1920" height="404" />
-            </clipPath>
-          </defs>
         </svg>
       </div>
       <!-- SVG background image END -->
@@ -652,7 +579,9 @@
         </ul>
            <!-- Return to top button START -->
         <div class="top-button" id="top-button">
-          <a href="#inner"><img src="./assets/icons/Scroll/scroll-up.svg" class="top-button__img" id="top-button__img" alt="Back to The Top!" title="Back to The Top!"></a>
+          <!-- <a href="#inner"> -->
+            <a href="#home"><img src="./assets/icons/Scroll/scroll-up.svg" class="top-button__img" id="top-button__img" alt="Back to The Top!" title="Back to The Top!"></a>
+          <!-- </a> -->
         </div>
       
     <!-- Return to top button END -->
@@ -660,7 +589,23 @@
 </div>
     <!-- Footer Section END -->
 
+    <!-- Animate on Scroll START -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          
+        });
+      </script>
+    <!-- Animate on Scroll END -->
 
-    <script src="./scripts/language.js"></script>
+    <!-- Pre-req scripts for form START -->
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+    <!-- Pre-req scripts for form END -->
+
+    <script src="./scripts/email.js"></script>
+    <script src="./scripts/top.js"></script>
+    <script src="./scripts/slide.js"></script>
   </body>
 </html>

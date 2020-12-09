@@ -1,21 +1,31 @@
 .skills {
   position: absolute;
   top: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .skills-text {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   background-color: #b29e9727;
   border-radius: 25px;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 7rem;
   padding: 1rem;
-  width: 96%;
-  height: 5%;
+  // width: 60vw;
+  // height: 20vh;
+  width: 90vw;
+  height: 20vh;
   box-shadow: 5px 4px #b29e976c;
 
   &:hover {
     transition: 1s ease;
     background-color: rgba(128, 128, 128, 0.308);
+  }
+
+  P {
+    text-align: center;
   }
 }
 // Skills Headings START
@@ -23,7 +33,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   margin-bottom: 0.5rem;
   margin-right: 1rem;
   margin-left: 1rem;
@@ -34,7 +43,7 @@
     text-align: center;
     text-decoration: underline;
     padding-bottom: 1rem;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 500;
   }
 }
@@ -47,40 +56,46 @@
   font-size: 0.8rem;
   font-style: italic;
 }
-.skills-img {
-  align-self: flex-end;
-}
-.receipts {
-  width: 20%;
-  height: auto;
-}
-.skills-resume {
-  width: 8rem;
-  display: flex;
-  align-items: flex-end;
-  font-size: 1rem;
 
-  a {
+.skills-container-resume {
+  display: flex;
+
+  .receipts {
+    width: 20%;
+    height: auto;
+    margin: 5%;
+  }
+
+  .skills-resume {
+    width: 8rem;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1rem;
     text-decoration: none;
     color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
+
 // Skills Headings END
 
 // Skill Icons START
 .skills-icons {
-  width: 40rem;
-  height: 4rem;
+  width: 50%;
+  height: 25%;
   background-color: #b29e9727;
   box-shadow: 5px 4px #b29e976c;
-  margin-bottom: 1.5rem;
+  margin-bottom: 5%;
   border-radius: 25px;
   display: flex;
   justify-content: space-around;
 
   i {
     padding-top: 1rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: gray;
     align-self: center;
 
@@ -100,9 +115,12 @@
 
 .skills-list {
   text-align: center;
+  width: 100%;
+  height: auto;
 }
 .skills-list__1 {
-  margin-top: 2rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
   // HTML
   .html {
     &:hover {
@@ -138,6 +156,7 @@
 // Skills List Two
 // ############################
 .skills-list__2 {
+  margin-left: 15rem;
   //Bootstrap
   .bootstrap {
     &:hover {
@@ -173,6 +192,7 @@
 // Skills List Three
 // ############################
 .skills-list__3 {
+  margin-left: 25rem;
   //NPM
   .npm {
     &:hover {
@@ -208,6 +228,7 @@
 // Skills List Four
 // ############################
 .skills-list__4 {
+  margin-left: 35rem;
   //Docker
   .docker {
     &:hover {

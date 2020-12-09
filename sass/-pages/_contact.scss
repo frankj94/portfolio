@@ -5,12 +5,12 @@
 }
 
 .contact-heading {
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 6rem;
   background-color: #b29e9727;
   box-shadow: 5px 4px #b29e976c;
   border-radius: 25px;
-  width: 96%;
-  height: auto;
+  width: 90vw;
+  height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +20,7 @@
     padding: 0.5rem;
     margin: 0.9rem;
 
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 500;
     text-decoration: underline;
   }
@@ -56,6 +56,11 @@
   background-color: #b29e9727;
   box-shadow: 5px 4px #b29e976c;
   border-radius: 15px;
+
+  h4 {
+    text-align: center;
+    text-decoration: underline;
+  }
 
   .contact-form {
     padding: 0.5rem;
@@ -104,8 +109,9 @@
   }
   .contact-form__heading {
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1px;
-    text-align: center;
     margin-top: 2rem;
   }
 }
@@ -122,6 +128,7 @@
   h4 {
     text-align: center;
     margin-bottom: 1rem;
+    text-decoration: underline;
   }
 
   .blog__heading {
@@ -174,6 +181,7 @@
 
   h4 {
     text-align: center;
+    text-decoration: underline;
   }
 
   .welive-para {
@@ -214,9 +222,15 @@
   box-shadow: 5px 4px #b29e976c;
   border-radius: 15px;
   display: flex;
+  justify-content: center;
   padding-top: 1rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+
+  h4 {
+    text-align: center;
+    text-decoration: underline;
+  }
 
   &:hover {
     transition: 1s ease;
@@ -230,7 +244,7 @@
 
   a {
     color: black;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
@@ -241,7 +255,7 @@
 
   a {
     color: black;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .la-gamepad:hover {
@@ -259,8 +273,6 @@
 #footer-background {
   fill: $primary-color;
   position: absolute;
-  width: 100vw;
-  height: 40vh;
   top: 395%;
   z-index: 0;
   transform: rotate(180deg);

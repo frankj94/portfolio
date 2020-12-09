@@ -34,15 +34,11 @@
     z-index: 100;
   }
 }
-// .header-wrapper__end {
-//   width: 100vw;
-//   height: 100vh;
-// }
+
 #main-background {
   fill: $primary-color;
   position: absolute;
-  width: 100vw;
-  height: 40vh;
   top: 10%;
+  right: 0%;
   z-index: 0;
 }

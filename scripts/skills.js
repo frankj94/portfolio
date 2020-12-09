@@ -279,7 +279,7 @@ const oldGit = document.getElementById('git');
 oldGit.addEventListener('click', gitClick);
 function gitClick(e) {
 if (git.innerHTML === '') {
-  git.innerHTML = '60%'
+  git.innerHTML = '65%'
   } else {
   git.innerHTML = ''
   }
@@ -366,7 +366,7 @@ const oldWordpress = document.getElementById('wordpress');
 oldWordpress.addEventListener('click', wordpressClick);
 function wordpressClick(e) {
 if (wordpress.innerHTML === '') {
-  wordpress.innerHTML = '85%'
+  wordpress.innerHTML = '75%'
   } else {
   wordpress.innerHTML = ''
   }
@@ -410,7 +410,7 @@ const oldPython = document.getElementById('python');
 oldPython.addEventListener('click', pythonClick);
 function pythonClick(e) {
 if (python.innerHTML === '') {
-  python.innerHTML = '60%'
+  python.innerHTML = '65%'
   } else {
   python.innerHTML = ''
   }
@@ -494,7 +494,7 @@ const oldDatabase = document.getElementById('database');
 oldDatabase.addEventListener('click', databaseClick);
 function databaseClick(e) {
 if (database.innerHTML === '') {
-  database.innerHTML = '60%'
+  database.innerHTML = '65%'
   } else {
   database.innerHTML = ''
   }
@@ -627,7 +627,7 @@ const oldAzure = document.getElementById('azure');
 oldAzure.addEventListener('click', azureClick);
 function azureClick(e) {
 if (azure.innerHTML === '') {
-  azure.innerHTML = '80%'
+  azure.innerHTML = '75%'
   } else {
   azure.innerHTML = ''
   }
@@ -804,7 +804,7 @@ const oldSecurity = document.getElementById('security');
 oldSecurity.addEventListener('click', securityClick);
 function securityClick(e) {
 if (security.innerHTML === '') {
-  security.innerHTML = '80%'
+  security.innerHTML = '70%'
   } else {
   security.innerHTML = ''
   }

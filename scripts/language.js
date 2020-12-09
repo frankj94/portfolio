@@ -1,22 +1,29 @@
-let dataReload = document.querySelectorAll("[data-reload]")
-let language = {
-    en: {
-        welcome: "Hey there"
-    },
-    fr: {
-        welcome: "Salut"
-    },
-};
+// Home Section START
 
-if (window.location.hash) {
-    if (window.location.hash === "#fr")
-    {
-        welcoming.textContent = language.fr.welcome; 
-        }
-}
+// ********************************************************************************************
+// ********************************************************************************************
+// ********************************************************************************************
 
-for (i = 0; i <= dataReload.lenght; i++) {
-    dataReload[i].onclick = function () {
-         setTimeout(function(){window.location.reload();},0);
-    }
-}
+// Introduction START
+
+// Introduction Statement END
+
+// ********************************************************************************************
+// ********************************************************************************************
+// ********************************************************************************************
+
+// Home Section END
+
+
+// Skills Section START
+
+// Skills Section END
+
+
+// Work Section START
+
+// Work Section END
+
+// Contact Section START
+
+// Contact Section END

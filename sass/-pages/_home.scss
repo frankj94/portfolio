@@ -6,11 +6,11 @@
 
   .home-section {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 4%;
     width: 50vw;
     border-radius: 15px;
-    padding: 1rem;
+    padding: 5rem;
     background-color: #b29e9727;
     box-shadow: 5px 4px #b29e976c;
 
@@ -28,7 +28,7 @@
     font-weight: 500;
   }
   p {
-    text-align: left;
+    text-align: center;
     font-size: 1.1rem;
   }
 }
@@ -39,8 +39,8 @@
   position: absolute;
   z-index: 15;
   left: 9%;
-  top: 82%;
-  font-size: 3rem;
+  top: 75%;
+  font-size: 5rem;
   text-align: center;
   width: 40vw;
   height: 10vh;
@@ -87,8 +87,8 @@
 
 .frosh {
   position: absolute;
-  right: 4%;
-  top: 30%;
+  right: 20%;
+  top: 50%;
   width: 27rem;
   height: 25rem;
   background-color: #b29e9727;
@@ -171,8 +171,8 @@
 // Frosh Tech Blog END
 #socials-email {
   position: absolute;
-  top: 75%;
-  left: 35%;
+  top: 70%;
+  left: 45%;
   margin: 0%;
 }
 #socials-email__send {
