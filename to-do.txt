@@ -5,5 +5,4 @@
 8) Actually do Projects in those languages and upload to Github
 9) Create iframe or image for the projects in Skills
 10) Form JavaScript and PHP
-11) Add obscurity with JavaScript to stop bots from stealing credentials
 12) Scroll to top disappear at top of page

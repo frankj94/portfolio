@@ -905,9 +905,15 @@ body {
   text-align: center;
 }
 
-.links-gaming a {
+.links-gaming i {
+  margin: 1rem;
   color: black;
   font-size: 3rem;
+  cursor: pointer;
+}
+
+.links-gaming .la-playstation:hover {
+  color: #003e93;
 }
 
 .links-gaming .la-gamepad:hover {

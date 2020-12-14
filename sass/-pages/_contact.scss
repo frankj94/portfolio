@@ -253,9 +253,15 @@
   flex-direction: column;
   text-align: center;
 
-  a {
+  i {
+    margin: 1rem;
     color: black;
     font-size: 3rem;
+    cursor: pointer;
+  }
+
+  .la-playstation:hover {
+    color: #003e93;
   }
 
   .la-gamepad:hover {

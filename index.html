@@ -140,7 +140,7 @@
 
         <!-- Brief description of myself END -->
       </section>
-      <section class="socials">
+      <section class="socials aos" data-aos="fade-right">
         <!-- Social Media START -->
         <div class="socials-container">
           <a href="#"><i class="lab la-facebook" title="Facebook"></i></a>
@@ -149,7 +149,7 @@
           <a href="#"><i class="lab la-instagram" title="Instagram"></i></a>
           <a href="#"><i class="lab la-linkedin" title="LinkedIn"></i></a>
           <a href="#"><i class="lab la-twitter" title="Twitter"></i></a>
-          <a href="#"><i class="lab la-whatsapp" title="WhatsApp"></i></a>
+          <!-- <a href="#"><i class="lab la-whatsapp" title="WhatsApp"></i></a> -->
         </div>
         <div class="socials-email" id="socials-email">
          <a href="mailto:hello@froshtech.dev" class="socials-email__send" id="socials-email__send">Send Me A Email!</a>
@@ -158,7 +158,7 @@
       </section>
 
       <!-- Frosh RSS Feed and Logo START -->
-      <div class="frosh">
+      <div class="frosh aos" data-aos="fade-left">
         <aside>
           <a
             href="https://www.froshtech.dev"
@@ -206,7 +206,7 @@
       <div class="skills" id="skills" >
 
     <!-- Skillset description heading and paragraph START -->
-      <div class="skills-text" data-aos="fade-down">
+      <div class="skills-text aos">
         <div class="skills-heading">
           <h3 class="skills-heading__heading">What Skills Do I Have?</h3>
           <p class="skills-heading__description1">
@@ -225,7 +225,7 @@
 
     <!-- Skillset image container one START -->
         <div class="skills-list">
-          <div class="skills-list__1 skills-icons" id="skills1" data-aos="fade-right">
+          <div class="skills-list__1 skills-icons aos" id="skills1" data-aos="fade-right">
             <!-- HTML Skills START -->
             <i class="fab fa-html5 html" id="html" title="HTML5"><div id="htmlJS"></div></i>
             <!-- HTML Skills END -->
@@ -250,8 +250,8 @@
     <!-- Skillset image container one END -->
 
     <!-- Skillset image container two  START -->
-
-          <div class="skills-list__2 skills-icons" data-aos="fade-right">
+ 
+          <div class="skills-list__2 skills-icons aos" data-aos="fade-right">
 
             <!-- Boostrap Skills START -->
             <i class="fab fa-bootstrap bootstrap" title="Bootstrap" id="bootstrap"><div id="bootstrapJS"></div></i>
@@ -278,7 +278,7 @@
 
     <!-- Skillset image container three START -->
 
-          <div class="skills-list__3 skills-icons" data-aos="fade-right">
+          <div class="skills-list__3 skills-icons aos" data-aos="fade-right">
 
             <!-- NPM Skills START -->
             <i class="fab fa-npm npm" title="NPM" id="npm"><div id="npmJS"></div></i>
@@ -305,7 +305,7 @@
 
     <!-- Skillset image container four START -->
 
-          <div class="skills-list__4 skills-icons" data-aos="fade-right">
+          <div class="skills-list__4 skills-icons aos" data-aos="fade-right">
 
             <!-- Docker Skills START -->
             <i class="fab fa-docker docker" title="Docker" id="docker"><div id="dockerJS"></div></i>
@@ -357,7 +357,7 @@
 
         <!-- Bootstrap Card One START -->
         
-          <div class="card-deck" id="card-deck" data-aos="fade-up">
+          <div class="card-deck aos" id="card-deck" data-aos="fade-up">
             <div class="card text-black text-center bg-light border-light">
               <div class="card-header" id="card-header">
                 NodeJS, AWS
@@ -446,7 +446,7 @@
 <div class="contact-method">
 
   <!-- Email Contact Form START -->
-  <div class="contact-method__form" data-aos="fade-right">
+  <div class="contact-method__form aos" data-aos="fade-right">
     <div class="contact-form__heading">
       <h4>Send Me an Email!</h4>
       <i class="far fa-paper-plane"></i>
@@ -473,7 +473,7 @@
   <!-- Email Contact Form END -->
 
   <!-- Blog Contact START -->
-  <div class="contact-method__blog" data-aos="fade-right">
+  <div class="contact-method__blog aos" data-aos="fade-right">
     <div class="contact-blog__heading">
       <div class="blog-heading">
         <h4 class="blog-heading__header">
@@ -493,7 +493,7 @@
   <!-- Blog Contact END -->
 
   <!-- Non-Profit START -->
-  <div class="contact-method__welive" data-aos="fade-left">
+  <div class="contact-method__welive aos" data-aos="fade-left">
     <div class="welive-heading">
       <h4 class="welive-heading__header">
         We Live & Give
@@ -516,7 +516,7 @@
 
 
 <!-- Social Media Contact START -->
-  <div class="contact-method__socials" data-aos="fade-left">
+  <div class="contact-method__socials aos" data-aos="fade-left">
     <div class="links-socials">
       <h4 class="link-socials__heading">Socials</h4>
       <a href="#"><i class="lab la-facebook" title="Facebook"></i></a>
@@ -525,18 +525,22 @@
       <a href="#"><i class="lab la-instagram" title="Instagram"></i></a>
       <a href="#"><i class="lab la-linkedin" title="LinkedIn"></i></a>
       <a href="#"><i class="lab la-twitter" title="Twitter"></i></a>
-      <a href="#"><i class="lab la-whatsapp" title="WhatsApp"></i></a>
+      <!-- <a href="#"><i class="lab la-whatsapp" title="WhatsApp"></i></a> -->
     </div>
     <div class="links-gaming">
       <h4 class="links-gaming__heading">Gaming</h4>
-      <a href=""><i class="lab la-playstation" title="PlayStation"></i></a>
-      <a href=""><i class="lab la-xbox" title="Xbox"></i></a>
-      <a href=""><i class="las la-gamepad" title="Nintendo"></i></a>
-      <a href=""><i class="lab la-steam" title="Steam"></i></a>
-      <a href=""><i class="lab la-battle-net" title="Battle.net"></i></a>
+      <i class="lab la-playstation" title="PlayStation" id="playstation"></i>
+      <i class="lab la-xbox" title="Xbox" id="xbox"></i>
+      <i class="las la-gamepad" title="Nintendo" id="nintendo"></i>
+      <i class="lab la-steam" title="Steam" id="steam"></i>
+      <!-- <a href=""><i class="lab la-battle-net" title="Battle.net"></i></a> -->
     </div>
   </div>
 <!-- Social Media Contact END -->
+
+<!-- Socials Script START -->
+<script src="./scripts/gaming.js"></script>
+<!-- Socials Script END -->
   </div>
 
       </div>
@@ -591,12 +595,32 @@
 
     <!-- Animate on Scroll START -->
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
       <script>
         AOS.init({
-          
+          mirror: false,
+           once: false,
+           startEvent: 'DOMContentLoaded',
+           duration : 2000,
         });
+
+        const aosAnimation = document.querySelectorAll('.aos');
+observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.classList.add('aos-animate');
+    } else {
+      entry.target.classList.remove('aos-animate');
+    }
+  });
+});
+aosAnimation.forEach(aosObject => {
+  observer.observe(aosObject);
+});
       </script>
+      
     <!-- Animate on Scroll END -->
+
 
     <!-- Pre-req scripts for form START -->
     <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
