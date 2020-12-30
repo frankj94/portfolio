@@ -1,0 +1,77 @@
+Heading: Faire de la maintenance
+
+En: Hey there 
+Fr: Salut!
+
+En: My name is Frank! 
+Fr: Mon nom est Frank!
+
+En: I'm a Software Developer who also has a fair bit of IT experience; I can build your WebApp, Website, or set up the Physical Infrastructure! Reach out to me if you want to work together! You can also see my full toolbelt below 
+Fr: Je suis un developpeur de software qui aussi un peu de experience en technologie de l'information. Je peux creer ton website, webapp, ou configure l’infrastructure physique! Contactez-moi si vous souhaitez travailler ensemble. Vous pouvez voir mes competences sous.  
+
+En: Send me an email
+Fr: Evoyez moi un email
+
+En: What Skills Do I Have?
+Fr: Quelles competences j’ai 
+
+En: From IT to Developer - I am hoping to be a jack of all trades! 
+Fr: Developpeur et technologie de l'information - j'espere être bon dans les deux
+
+En: Click icons to see my conservative 'guestimate' of my proficiency.
+Fr: Clique sur les icones au voir mes competences
+
+En: Link to my resume
+Fr: Mon CV
+
+En: Here are Some of My Projects
+Fr: Voila quelque-uns de mes projets
+
+En: Tip: Visit My Pages to See More!
+Fr: Tip: Visite mes pages pour savoir plus
+
+En: Want to Get in Touch?
+Fr: Voulez-vous contacter moi
+
+En: Do you want to work together? Hire me for a project or position? Simply say hello or game with me?
+Fr: Voulez-vous au travailler avec moi? Engagez-moi pour un emploi? Dites bounjour ou jouez ensemble?
+
+En: Here are just a few ways you can do that:
+Fr: Voici juste un peu methods tu peux faire ca
+
+En: Send Me an Email
+Fr: Evoyez moi un email
+
+En: Enter your name
+Fr: Entrez votre nom
+
+En: Enter your email
+Fr: Entrez votre email
+
+En: Enter your comment 
+Fr: Entrez votre commentaire
+
+En: Check Out My Blog! 
+Fr: Voir mon blog
+
+En: In my blog I focus on the foundational skills required to get a job in the IT or Programming industry.
+Fr: Chez mon blog je parle sur les competences de base necessaires pour obtenir un employ dans l’industrie informatique ou de la programmation 
+
+En: We Live & Give is a non-profit that is focused on empowering the youth by providing mentoring, tutoring and training in Aviation, Media-Arts and Entrepreneurship.
+Fr: We Live & Give est un organisation non lucrative, il est utilize pour autonomiser les jeunes, par le mentorat, le tutorat et la formation en aviation, art et entrepreneuriat
+
+En: Socials
+Fr: Media sociaux
+
+En: Gaming
+Fr: jeux video
+
+En: I'm open to discussing with all persons about any opportunities!
+Fr: Je suis ouvrir au parle avec tous des personnes a propos toute opportunite
+
+•	Made By: © Frank Walker 2020
+•	| From: Nassau, Bahamas  |
+•	Reach Out to Me! 🎉
+Fr: faite par
+De origin
+Envoie moi un message

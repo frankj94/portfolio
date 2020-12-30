@@ -729,11 +729,11 @@ body {
   border: solid 3px #a8d4d2;
 }
 
-.contact-method__form .comment-submit input {
+.contact-method__form .comment-submit button {
   border-radius: 5px;
 }
 
-.contact-method__form .comment-submit input:hover {
+.contact-method__form .comment-submit button:hover {
   background-color: #a8d4d2;
   -webkit-transition: 1s ease;
   transition: 1s ease;

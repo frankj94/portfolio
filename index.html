@@ -44,6 +44,25 @@
     
     /////////////////////////////////////////////////////-->
 
+
+<!-- Script to submit form to gsheet -->
+      <script>
+          var $form = $('form#contact-form'),
+        url = 'https://script.google.com/macros/s/AKfycbxAj9MonKWsulIK8OQT7NoILKmATghyVlmiPzMWa2gjt45a02_U/exec'
+
+    $('#submit-form').on('click', function(e) {
+      e.preventDefault();
+      var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject()
+      }).success(
+        // do something
+      );
+    })
+       </script>
+<!-- Script to submit form to gsheet -->
      
   </head>
   <body id="body">
@@ -143,12 +162,12 @@
       <section class="socials aos" data-aos="fade-right">
         <!-- Social Media START -->
         <div class="socials-container">
-          <a href="#"><i class="lab la-facebook" title="Facebook"></i></a>
-          <a href="#"><i class="lab la-flickr" title="Flickr"></i></a>
-          <a href="#"><i class="lab la-github" title="GitHub"></i></a>
-          <a href="#"><i class="lab la-instagram" title="Instagram"></i></a>
-          <a href="#"><i class="lab la-linkedin" title="LinkedIn"></i></a>
-          <a href="#"><i class="lab la-twitter" title="Twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100059711742302"><i class="lab la-facebook" title="Facebook"></i></a>
+          <a href="https://www.flickr.com/photos/191408333@N05/"><i class="lab la-flickr" title="Flickr"></i></a>
+          <a href="https://github.com/megasxl264"><i class="lab la-github" title="GitHub"></i></a>
+          <a href="https://www.instagram.com/frankjo1994/"><i class="lab la-instagram" title="Instagram"></i></a>
+          <a href="https://www.linkedin.com/in/frank-walker-7367b01b6/"><i class="lab la-linkedin" title="LinkedIn"></i></a>
+          <a href="https://twitter.com/FrankWa21649584"><i class="lab la-twitter" title="Twitter"></i></a>
           <!-- <a href="#"><i class="lab la-whatsapp" title="WhatsApp"></i></a> -->
         </div>
         <div class="socials-email" id="socials-email">
@@ -347,9 +366,9 @@
           </div>
           <div class="work-heading__list">
             <ul class="work-list">
-              <li class="work-links"><a href="#" target="_blank" title="My Blog">My Blog</a></li>
-              <li class="work-links"><a href="#" target="_blank" title="My Github Page">My Github</a></li>
-              <li class="work-links"><a href="#" target="_blank" title="My IT Projects">IT Related Projects</a></li>
+              <li class="work-links"><a href="https://www.froshtech.dev" target="_blank" title="My Blog">My Blog</a></li>
+              <li class="work-links"><a href="https://github.com/megasxl264" target="_blank" title="My Github Page">My Github</a></li>
+              <li class="work-links"><a href="https://www.flickr.com/photos/191408333@N05/" target="_blank" title="My IT Projects">IT Related Projects</a></li>
             </ul>
           </div>
         </div>
@@ -451,10 +470,10 @@
       <h4>Send Me an Email!</h4>
       <i class="far fa-paper-plane"></i>
     </div>
-    <form action="" class="contact-form">
+    <form action="" class="contact-form" id="contact-form">
       <div class="name-container">
       <label for="name"> Enter Your Name:</label>
-      <input type="text" name="text" id="form-name" placeholder="Enter Your Name">
+      <input type="text" name="name" id="form-name" placeholder="Enter Your Name">
       </div>
       <div class="email-container">
         <label for="email">Enter Your Email:</label>
@@ -465,7 +484,7 @@
       <textarea name="textarea" id="comment-text" cols="30" rows="3" placeholder="Leave A Comment..." type="text"></textarea>
       </div>
       <div class="comment-submit">
-        <input type="submit" value="Send!" title="Sends Me A Email!">
+        <button type="submit" value="Send!" title="Sends Me A Email!" id="submit-form">Send!</button>
       </div>
     </form>
   </div>
@@ -505,7 +524,7 @@
         <p>We Live & Give is a non-profit that is 
           focused on empowering the youth by 
           providing mentoring, tutoring and training 
-          in Aviation, Media-Arts and Entrepeneurship.</p>
+          in Aviation, Media-Arts and Entrepreneurship.</p>
       </div>
       <div class="contact-button__container">
        <button><a href="https://www.weliveandgive.org/" title="We Live & Give Foundation" class="contact-buttons" target="_blank">Read More!</a></button>
@@ -519,12 +538,12 @@
   <div class="contact-method__socials aos" data-aos="fade-left">
     <div class="links-socials">
       <h4 class="link-socials__heading">Socials</h4>
-      <a href="#"><i class="lab la-facebook" title="Facebook"></i></a>
-      <a href="#"><i class="lab la-flickr" title="Flickr"></i></a>
-      <a href="#"><i class="lab la-github" title="GitHub"></i></a>
-      <a href="#"><i class="lab la-instagram" title="Instagram"></i></a>
-      <a href="#"><i class="lab la-linkedin" title="LinkedIn"></i></a>
-      <a href="#"><i class="lab la-twitter" title="Twitter"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100059711742302"><i class="lab la-facebook" title="Facebook"></i></a>
+      <a href="https://www.flickr.com/photos/191408333@N05/"><i class="lab la-flickr" title="Flickr"></i></a>
+      <a href="https://github.com/megasxl264"><i class="lab la-github" title="GitHub"></i></a>
+      <a href="https://www.instagram.com/frankjo1994/"><i class="lab la-instagram" title="Instagram"></i></a>
+      <a href="https://www.linkedin.com/in/frank-walker-7367b01b6/"><i class="lab la-linkedin" title="LinkedIn"></i></a>
+      <a href="https://twitter.com/FrankWa21649584"><i class="lab la-twitter" title="Twitter"></i></a>
       <!-- <a href="#"><i class="lab la-whatsapp" title="WhatsApp"></i></a> -->
     </div>
     <div class="links-gaming">
@@ -581,7 +600,7 @@
           <li class="footer-list__items flag"> | From: Nassau, Bahamas <img src="./assets/icons/flags/bahamas.svg" alt="bahamas-flag" class="bahamas-flag"> |</li>
           <li class="footer-list__items">Reach Out to Me! &#127881;</li>
         </ul>
-           <!-- Return to top button START -->
+    <!-- Return to top button START -->
         <div class="top-button" id="top-button">
           <!-- <a href="#inner"> -->
             <a href="#home"><img src="./assets/icons/Scroll/scroll-up.svg" class="top-button__img" id="top-button__img" alt="Back to The Top!" title="Back to The Top!"></a>
@@ -623,9 +642,7 @@ aosAnimation.forEach(aosObject => {
 
 
     <!-- Pre-req scripts for form START -->
-    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+   
     <!-- Pre-req scripts for form END -->
 
     <script src="./scripts/email.js"></script>
